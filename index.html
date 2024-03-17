@@ -9,78 +9,77 @@
 </head>
 
 <body>
-  <header class="flex jc-sb aln-ct wrap bg-blk fnt-l clr-wht pad-1rem">
-    <a href="index.html"><img src="img/bikcraft.svg" alt=""></a>
+  <header class="flx jc-sb al-it wrap bg-blk clr-wht pad-1">
+    <div>
+      <a href="index.html"><img src="img/bikcraft.svg" alt=""></a>
+    </div>
     <nav>
-      <ul class="flex jc-sb wrap gap-1rem mar-1rem">
-        <li><a class="clr-inh" href="bicicletas.html">Bicicletas</a></li>
-        <li><a class="clr-inh" href="seguros.html">Seguros</a></li>
-        <li><a class="clr-inh" href="contato.html">Contatos</a></li>
+      <ul class="flx jc-sb wrap gap-1 fnt-sm">
+        <li><a href="bicicletas.html">Bicicletas</a></li>
+        <li><a href="seguros.html">Seguros</a></li>
+        <li><a href="contato.html">Contatos</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="bg-wbw clr-wht">
+  <main class="grd-2 al-it jc-ct bg-wbw clr-wht mar-1vt">
     <!-- grid duas colunas, foto na segunda, resto na primeira -->
-    <div class="fnt-l flex aln-ct jc-ct">
-      <div class="mar-1rem-hr mar-n2rem-tp">
-        <!-- ponto amarelo no final -->
-        <h1 class="fnt-l">Bicicletas feitas sob medida<span class="clr-ylw">.</span></h1>
-        <p class="fnt-m ln-hgt wdt-40">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida pra você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-        <!-- uppercase, fundo amarelo, que nem botão -->
-        <a class="bg-ylw pad-1rem brd-r-5px clr-blk up-cs" href="bicicletas.html">escolha a sua</a>
-      </div>
-      <div class="mar-1rem">
-        <!-- foto da bike vazando bottom -->
-        <img class="" src="img/bicicletas/nimbus-home.jpg" alt="" height="600">
-      </div>
+    <div class="pad-1">
+      <!-- ponto amarelo no final -->
+      <h1 class="fnt-ll">Bicicletas feitas sob medida<span class="clr-ylw">.</span></h1>
+      <p class="fnt-m ln-hgt mar-1vt">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida pra você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+      <!-- uppercase, fundo amarelo, que nem botão -->
+      <a class="bg-ylw brd-05 pad-1 clr-blk fnt-s up-cs" href="bicicletas.html">escolha a sua</a>
+    </div>
+    <div class="mar-1rem">
+      <!-- foto da bike vazando bottom -->
+      <img class="" src="img/bicicletas/nimbus-home.jpg" alt="" height="600">
     </div>
   </main>
 
   <!-- grid tres colunas, titulo da primeira a segunda, uma bike cada, com nome e e preço -->
   <section>
-    <h1 class="mg-1em txt-lg">escolha a sua<span class="ylw">.</span></h1>
-    <div class="gd-02">
-      <div class="card">
-        <img class="mg-00" src="img/bicicletas/magic-home.jpg" alt="" height="250">
-        <!-- detalhe pseudo antes -->
-        <p>Magic Might</p>
-        <!-- uppercase -->
-        <span class="up">r$ 2499</span>
+    <h1 class="mar-1 fnt-ll">escolha a sua<span class="clr-ylw">.</span></h1>
+    <div class="flx wrap jc-sa">
+      <div>
+        <img class="blc" src="img/bicicletas/magic-home.jpg" alt="" height="250">
+        <div class="flx jc-sb">
+          <!-- detalhe pseudo antes -->
+          <p class="il-blc mar-1lt">Magic Might</p>
+          <span class="il-blc up-cs">r$ 2499</span>
+        </div>
       </div>
-      <div class="card">
-        <img class="mg-00" src="img/bicicletas/nebula-home.jpg" alt="" height="250">
+      <div>
+        <img class="blc" src="img/bicicletas/nebula-home.jpg" alt="" height="250">
         <!-- detalhe pseudo antes -->
-        <p>Nebula Cosmic</p>
-        <!-- uppercase -->
-        <span class="up">r$3999</span>
+        <div class="flx jc-sb">
+          <p class="il-blc mar-1lt">Nebula Cosmic</p>
+          <span class="il-blc up-cs">r$3999</span>
+        </div>
       </div>
-      <div class="card">
-        <img class="mg-00" src="img/bicicletas/nimbus-home.jpg" alt="" height="250">
+      <div>
+        <img class="blc" src="img/bicicletas/nimbus-home.jpg" alt="" height="250">
         <!-- detalhe pseudo antes -->
-        <p>Nimbus Stark</p>
-        <!-- uppercase -->
-        <span class="up">4999</span>
+        <div class="flx jc-sb">
+          <p class="il-blc mar-1lt">Nimbus Stark</p>
+          <span class="il-blc up-cs">r$4999</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- parecido com main, texto primeira coluna, só q foto vaza top e bottom na segunda -->
-  <section class="bg-001">
-    <div class="gd-01">
-      <div class="card">
-        <div class="space"></div>
-        <!-- uppercase -->
-        <span class="txt-md txt-l">tecnologia avançada</span>
-        <!-- ponto amarelo no final -->
-        <h1 class="txt-lg txt-l">você escolhe as suas cores e componentes<span class="ylw">.</span></h1>
-        <p class=" txt-l ch-40">Cada Bikcraft é única e possui a sua identidade. As medidas são exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você também pode personalizar completamente as suas cores.</p>
-        <!-- uppercase, cor amarelo CONFIRMAR -->
-        <a class="bt-00 up" href="bicicletas.html">escolha a sua</a>
-      </div>
-      <div>
-        <img src="img/fotos/tecnologia.jpg" alt="" height="600">
-      </div>
+  <section class="grd-2 bg-wbw mar-1vt al-it">
+    <div class="pad-1 clr-wht">
+      <!-- uppercase -->
+      <span class="mar-1vt fnt-m">tecnologia avançada</span>
+      <h1 class="fnt-ll">você escolhe as suas cores e componentes<span class="clr-ylw">.</span></h1>
+      <p class="mar-1vt fnt-m">Cada Bikcraft é única e possui a sua identidade. As medidas são exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você também pode personalizar completamente as suas cores.</p>
+      <!-- uppercase, cor amarelo CONFIRMAR -->
+      <a class="bg-ylw brd-05 pad-1 clr-blk fnt-s up-cs" href="bicicletas.html">escolha a sua</a>
+    </div>
+    <div>
+      <img src="img/fotos/tecnologia.jpg" alt="" height="600">
     </div>
   </section>
 
@@ -156,18 +155,18 @@
     </div>
   </section>
 
-  <footer class="bg-blk fnt-l pad-1rem clr-wht">
-    <section class="flex jc-sb wrap gap-1rem">
-      <a href=" index.html"><img src="img/bikcraft.svg" alt=""></a>
+  <footer class="bg-blk fnt-sm pad-1 clr-wht">
+    <section class="flx jc-sb wrap gap-1">
+      <a href="index.html"><img src="img/bikcraft.svg" alt=""></a>
       <div>
         <span class="up-cs">contato</span>
         <ul class="ln-hgt">
           <li>-55 (41) 99999-9999</li>
           <li>email.ficticio@gmail.com</li>
-          <div class="line mar-1rem-vt"></div>
-          <li>Rua tal de tal, número tal<br>Bairo Tal</li>
+          <div class="line mar-1vt"></div>
+          <li>Rua tal de tal, número tal<br>Bairro Tal</li>
         </ul>
-        <div class="flex gap-1rem">
+        <div class="flex gap-1">
           <a href=""><img src="img/redes/facebook-p.svg" alt=""></a>
           <a href=""><img src="img/redes/instagram-p.svg" alt=""></a>
           <a href=""><img src="img/redes/youtube-p.svg" alt=""></a>
@@ -176,15 +175,14 @@
       <nav>
         <span class="up-cs">informações</span>
         <ul class="ln-hgt">
-          <li><a class="clr-inh" href="bicicletas.html">Bicicletas</a></li>
-          <li><a class="clr-inh" href="seguros.html">Seguros</a></li>
-          <li><a class="clr-inh" href="contato.html">Contatos</a></li>
+          <li><a href="bicicletas.html">Bicicletas</a></li>
+          <li><a href="seguros.html">Seguros</a></li>
+          <li><a href="contato.html">Contatos</a></li>
         </ul>
       </nav>
     </section>
-    <p><a class="clr-inh" href="termos.html">Direitos reservados.</a></p>
+    <p class="mar-1tp"><a href="termos.html">Direitos reservados.</a></p>
   </footer>
-
 </body>
 
 </html>
