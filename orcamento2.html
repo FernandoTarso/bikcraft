@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bikcraft</title>
+  <link rel="stylesheet" href="styles.css/styles.css">
+</head>
+
+<body>
+  <header class="flex jc-sb aln-ct wrap bg-blk fnt-l clr-wht pad-1rem">
+    <a href="index.html"><img src="img/bikcraft.svg" alt=""></a>
+    <nav>
+      <ul class="flex jc-sb wrap gap-1rem mar-1rem">
+        <li><a class="clr-inh" href="bicicletas.html">Bicicletas</a></li>
+        <li><a class="clr-inh" href="seguros.html">Seguros</a></li>
+        <li><a class="clr-inh" href="contato.html">Contatos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- duas colunas, seleção na primeira, info+entrega na segunda -->
+    <div class="bg-002 pd-01">
+
+      <!-- ponto amarelo -->
+      <h1 class="txt-lg txt-l">solicite um orçamento<span class="ylw">.</span></h1>
+      <form action="">
+        <div class="gd-01 pd-01">
+          <div class="bg-01 txt-l pd-01 bdr-lt">
+            <!-- uppercase, detalhe amarelo -->
+            <legend class="mg-1em mg-up mg-tp">bikcraft ou seguro?</legend>
+            <div>
+              <input name="bikseg" type="radio" value="1"><span class="bt-01">Bikcraft</span>
+              <input name="bikseg" type="radio" value="2"><span class="bt-02">Seguro</span>
+            </div>
+            <div id="bik-opt">
+              <!-- uppercase, detalhe amarelo -->
+              <legend class="bike">escolha a sua:</legend>
+              <input name="bik" class="bike" type="radio"><span class="bt-01">Magic Might</span><br>
+              <input name="bik" class="bike" type="radio"><span class="bt-01">Nebula Cosmic</span><br>
+              <input name="bik" class="bike" type="radio"><span class="bt-01">Nimbus Stark</span>
+            </div>
+            <div id="seg-opt">
+              <!-- uppercase, detalhe amarelo -->
+              <legend class="mg-00" class="plano">escolha o plano:</legend>
+              <input name="seg" class="plano" type="radio"><span class="bt-01">Prata</span><br>
+              <input name="seg" class="plano" type="radio"><span class="bt-01">Ouro</span>
+            </div>
+          </div>
+          <div class="bg-04 pd-01 bdr-rt">
+            <!-- upercase -->
+            <legend class="mg-1em mg-up up">dados pessoais</legend>
+            <div class="gd-01 pd-01">
+              <label class="txt-b" for="nome">Nome <input class="txt-b" id="nome" name="nome" type="text" placeholder="Nome"></label>
+              <label class="txt-b" for="sobrenome">Sobrenome <input class="txt-b" id="sobrenome" name="sobrenome" type="text" placeholder="Sobrenome"></label>
+              <label class="txt-b" for="cpf"> CPF <input class="txt-b" id="cpf" name="cpf" type="number" placeholder="000.000.000-00"></label>
+              <label class="txt-b" for="email">Email <input class="txt-b" id="email" name="email" type="email" placeholder="contato@email.com"></label>
+            </div>
+            <!-- upercase -->
+            <legend class="mg-00 mg-1em up">entrega</legend>
+            <div class="gd-01 pd-01">
+              <label class="txt-b" for="cep">CEP <input class="txt-b" id="cep" name="cep" type="number" placeholder="00000-000"></label>
+              <label class="txt-b" for="numero">Número <input class="txt-b" id="numero" name="numero" type="number" placeholder=""></label>
+              <label class="txt-b" for="logradouro">Logradouro <input class="txt-b" id="logradouro" name="logradouro" type="text" placeholder="Rua, Avenida..."></label>
+              <label class="txt-b" for="bairro">Bairro <input class="txt-b" id="bairro" name="bairro" type="text" placeholder=""></label>
+              <label class="txt-b" for="cidade">Cidade <input class="txt-b" id="cidade" name="cidade" type="text" placeholder=""></label>
+              <label class="txt-b" for="estado">Estado <input class="txt-b" id="estado" name="estado" type="text" placeholder=""></label>
+              <!-- <select name="" id="">
+                <option value="">Selecione</option>
+              </select> -->
+            </div>
+            <input class="bt-00 up cl-2 mg-bt" type="submit" value="solicitar orçamento">
+          </div>
+          <!-- link estilo botao, uppercase -->
+
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+  <footer class="bg-blk fnt-l pad-1rem clr-wht">
+    <section class="flex jc-sb wrap gap-1rem">
+      <a href=" index.html"><img src="img/bikcraft.svg" alt=""></a>
+      <div>
+        <span class="up-cs">contato</span>
+        <ul class="ln-hgt">
+          <li>-55 (41) 99999-9999</li>
+          <li>email.ficticio@gmail.com</li>
+          <div class="line mar-1rem-vt"></div>
+          <li>Rua tal de tal, número tal<br>Bairo Tal</li>
+        </ul>
+        <div class="flex gap-1rem">
+          <a href=""><img src="img/redes/facebook-p.svg" alt=""></a>
+          <a href=""><img src="img/redes/instagram-p.svg" alt=""></a>
+          <a href=""><img src="img/redes/youtube-p.svg" alt=""></a>
+        </div>
+      </div>
+      <nav>
+        <span class="up-cs">informações</span>
+        <ul class="ln-hgt">
+          <li><a class="clr-inh" href="bicicletas.html">Bicicletas</a></li>
+          <li><a class="clr-inh" href="seguros.html">Seguros</a></li>
+          <li><a class="clr-inh" href="contato.html">Contatos</a></li>
+        </ul>
+      </nav>
+    </section>
+    <p><a class="clr-inh" href="termos.html">Direitos reservados.</a></p>
+  </footer>
+
+</body>
+
+</html>
