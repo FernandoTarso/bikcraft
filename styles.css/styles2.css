@@ -45,6 +45,9 @@ ol {
 .mar-res {
   margin: 0;
 }
+.mar-0a {
+  margin: 0 auto;
+}
 .mar-1 {
   margin: 1rem;
 }
@@ -53,6 +56,9 @@ ol {
 }
 .mar-1tp {
   margin-top: 1rem;
+}
+.mar-1bt {
+  margin-bottom: 1rem;
 }
 .mar-1vt {
   margin-top: 1rem;
@@ -127,8 +133,14 @@ ol {
 .bg-wht {
   background: white;
 }
+.bg-gry {
+  background: gray;
+}
 .bg-wbw {
   background: var(--lg-wbw);
+}
+.bg-bw {
+  background: var(--lg-bw);
 }
 .bg-ylw {
   background: yellow;
@@ -144,6 +156,9 @@ ol {
   color: yellow;
 }
 
+.tal-rt {
+  text-align: right;
+}
 .up-cs {
   text-transform: uppercase;
 }
