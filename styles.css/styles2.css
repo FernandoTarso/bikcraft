@@ -6,6 +6,7 @@
     black 10% 90%,
     white 90% 100%
   );
+  --lg-wb-hr: linear-gradient(270deg, black 0% 75%, white 75% 100%);
 }
 
 html {
@@ -94,9 +95,15 @@ ol {
 .blc {
   display: block;
 }
+.grd {
+  display: grid;
+}
 .grd-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.clm-ac {
+  grid-column: 1 / -1;
 }
 .flx {
   display: flex;
@@ -126,6 +133,9 @@ ol {
 .al-it {
   align-items: center;
 }
+.pl-ct {
+  place-self: center;
+}
 
 .bg-blk {
   background: black;
@@ -144,6 +154,9 @@ ol {
 }
 .bg-ylw {
   background: yellow;
+}
+.bg-wb-hr {
+  background: var(--lg-wb-hr);
 }
 
 .clr-wht {
