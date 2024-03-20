@@ -1,5 +1,6 @@
 :root {
   --lg-bw: linear-gradient(180deg, black 0% 90%, white 90% 100%);
+  --lg-bw-2: linear-gradient(0deg, black 0% 90%, white 90% 100%);
   --lg-wbw: linear-gradient(
     180deg,
     white 0% 10%,
@@ -44,6 +45,17 @@ ol {
   list-style: none;
 }
 
+.sd-50 {
+  max-width: 50%;
+}
+.fit {
+  width: fit-content;
+}
+
+.wdt-30 {
+  width: 30rem;
+}
+
 .mar-res {
   margin: 0;
 }
@@ -77,6 +89,9 @@ ol {
 .pad-res {
   padding: 0;
 }
+.pad-02 {
+  padding: 0.2rem;
+}
 .pad-08 {
   padding: 0.8rem;
 }
@@ -109,6 +124,9 @@ ol {
 .flx {
   display: flex;
   flex: 1;
+}
+.clm {
+  flex-direction: column;
 }
 .wrap {
   flex-wrap: wrap;
@@ -152,6 +170,9 @@ ol {
 }
 .bg-bw {
   background: var(--lg-bw);
+}
+.bg-bw-2 {
+  background: var(--lg-bw-2);
 }
 .bg-ylw {
   background: yellow;
@@ -206,6 +227,9 @@ ol {
 
 .brd-res {
   border: none;
+}
+.brd-03 {
+  border-radius: 0.3rem;
 }
 .brd-05 {
   border-radius: 0.5rem;
