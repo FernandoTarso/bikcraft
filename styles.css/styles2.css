@@ -7,6 +7,7 @@
     white 90% 100%
   );
   --lg-wb-hr: linear-gradient(270deg, black 0% 75%, white 75% 100%);
+  --lg-wb-hr-2: linear-gradient(90deg, black 0% 50%, white 50% 100%);
 }
 
 html {
@@ -158,6 +159,9 @@ ol {
 .bg-wb-hr {
   background: var(--lg-wb-hr);
 }
+.bg-wb-hr-2 {
+  background: var(--lg-wb-hr-2);
+}
 
 .clr-wht {
   color: white;
@@ -200,6 +204,9 @@ ol {
   line-height: 1.4;
 }
 
+.brd-res {
+  border: none;
+}
 .brd-05 {
   border-radius: 0.5rem;
 }

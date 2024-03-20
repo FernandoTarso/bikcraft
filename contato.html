@@ -9,92 +9,82 @@
 </head>
 
 <body>
-  <header class="flex jc-sb aln-ct wrap bg-blk fnt-l clr-wht pad-1rem">
-    <a href="index.html"><img src="img/bikcraft.svg" alt=""></a>
+  <header class="flx jc-sb al-it wrap bg-blk clr-wht pad-1">
+    <div>
+      <a href="index.html"><img src="img/bikcraft.svg" alt=""></a>
+    </div>
     <nav>
-      <ul class="flex jc-sb wrap gap-1rem mar-1rem">
-        <li><a class="clr-inh" href="bicicletas.html">Bicicletas</a></li>
-        <li><a class="clr-inh" href="seguros.html">Seguros</a></li>
-        <li><a class="clr-inh" href="contato.html">Contatos</a></li>
+      <ul class="flx jc-sb wrap gap-1 fnt-sm">
+        <li><a href="bicicletas.html">Bicicletas</a></li>
+        <li><a href="seguros.html">Seguros</a></li>
+        <li><a href="contato.html">Contatos</a></li>
       </ul>
     </nav>
   </header>
 
+  <section class="bg-gry pad-1">
+    <span class="up-cs fnt-m clr-wht">respostas em até 24h</span>
+    <!-- ponto amarelo -->
+    <h1 class="fnt-ll clr-wht">nosso contato<span class="ylw">.</span></h1>
+
+  </section>
+
   <!-- formulario vazado. por form dentro da div com fundo bicolor -->
-  <main class="bg-002">
-    <div class="mg-01">
-      <!-- uppercase -->
-      <span class="up txt-l">respostas em até 24h</span>
-      <!-- ponto amarelo -->
-      <h1 class="mg-00 txt-lg txt-l">nosso contato<span class="ylw">.</span></h1>
-      <!-- duas colunas, info na primeira, form na segunda -->
-      <div class="gd-01 txt-l bg-01">
+  <main class="bg-gry pad-1 fnt-m">
+    <div class="bg-wb-hr-2 grd-2 brd-05">
+      <div class="pad-1 clr-wht">
+        <span class="blc mar-1bt">Lojas Online</span>
+        <!-- duas colunas, icones na primeira, texto na segunda -->
         <div>
-          <span>Lojas Online</span>
-          <!-- duas colunas, icones na primeira, texto na segunda -->
-          <div class="gd-01">
-            <div>
-
-            </div>
-            <div>
-              <p>rua tal, numero <br>
-                Curitiba, Paraná <br>
-                Brasil-Terra-Via Láctea</p>
-              <p>vendas@bikcraft.como <br>
-                assistencia@bikcraft.com</p>
-              <p>numero telefone</p>
-            </div>
-          </div>
-          <!-- icones redes sociais -->
+          <p>rua tal, numero tal <br>
+            Curitiba, Paraná <br>
+            Brasil-Terra-Via Láctea</p>
+          <p>vendas@bikcraft.como <br>
+            assistencia@bikcraft.com</p>
+          <p>(41) 99999-9999</p>
         </div>
-        <div class="bg-04 txt-d">
-          <form action="">
-            <div class="flex-2">
-              <label for="nome">Nome<input id="nome" name="nome" type="text" placeholder="Seu nome"></label><br>
-            </div>
-            <div class="flex-2">
-              <label for="telefone">Telefone<input id="telefone" name="telefone" type="number" placeholder="(41) 99999-9999"></label><br>
-            </div>
-            <div class="flex-2">
-              <label for="email">Email<input id="email" name="email" type="email" placeholder="contato@email.com"></label><br>
-            </div>
-
-            <legend>Mensagem</legend>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="10">O que você precisa?</textarea><br>
-            <!-- link estilo botao, uppercase -->
-            <input class="bt-00 up" type="submit" value="enviar mensagem">
-          </form>
-        </div>
+        <!-- icones redes sociais -->
+      </div>
+      <div class="pad-1">
+        <form action="">
+          <label class="blc" for="nome">Nome<input class="blc" id="nome" name="nome" type="text" placeholder="Seu nome"></label>
+          <label class="blc" for="telefone">Telefone<input class="blc" id="telefone" name="telefone" type="number" placeholder="(41) 99999-9999"></label>
+          <label class="blc" for="email">Email<input class="blc" id="email" name="email" type="email" placeholder="contato@email.com"></label>
+          <legend>Mensagem</legend>
+          <textarea name="mensagem" id="mensagem" cols="21" rows="8">O que você precisa?</textarea>
+          <!-- link estilo botao, uppercase -->
+          <input class="bg-ylw blc brd-res brd-05 pad-1 clr-blk fnt-s up-cs mar-1vt" type="submit" value="enviar mensagem">
+        </form>
       </div>
     </div>
   </main>
 
   <section>
     <!-- ponto amarelo -->
-    <h1 class="mg-00 txt-lg">lojas locais<span class="ylw">.</span></h1>
+    <h1 class="mar-1 fnt-ll">lojas locais<span class="clr-ylw">.</span></h1>
     <!-- colocar duas localizações google maps embutidas, uma em cada coluna -->
-    <div class="flex-2 mg-00">
-      <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1071.0507836820063!2d-49.22527359421629!3d-25.45260031880138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1709255598755!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="flx wrap jc-sa">
+      <div class="mar-1vt">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d900.6434613317788!2d-49.22593293043787!3d-25.452507187656845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce51505477dbd%3A0x3543292cdc169425!2sR.%20Vicente%20de%20Carvalho%2C%20113!5e0!3m2!1sen!2sbr!4v1710896633651!5m2!1sen!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2142.1115716112977!2d-49.213107893898766!3d-25.45203810615578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1709255715376!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="mar-1vt">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28820.723561178474!2d-49.233397065234385!3d-25.451952500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce55d31a299f5%3A0xc05a36b7724e1b5a!2sR.%20dos%20Ferrovi%C3%A1rios%2C%20249%20-%20Cajuru%2C%20Curitiba%20-%20PR%2C%2082920-100!5e0!3m2!1sen!2sbr!4v1710896930645!5m2!1sen!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
 
-  <footer class="bg-blk fnt-l pad-1rem clr-wht">
-    <section class="flex jc-sb wrap gap-1rem">
-      <a href=" index.html"><img src="img/bikcraft.svg" alt=""></a>
+  <footer class="bg-blk fnt-sm pad-1 clr-wht">
+    <section class="flx jc-sb wrap gap-1">
+      <a href="index.html"><img src="img/bikcraft.svg" alt=""></a>
       <div>
         <span class="up-cs">contato</span>
         <ul class="ln-hgt">
           <li>-55 (41) 99999-9999</li>
           <li>email.ficticio@gmail.com</li>
-          <div class="line mar-1rem-vt"></div>
-          <li>Rua tal de tal, número tal<br>Bairo Tal</li>
+          <div class="line mar-1vt"></div>
+          <li>Rua tal de tal, número tal<br>Bairro Tal</li>
         </ul>
-        <div class="flex gap-1rem">
+        <div class="flex gap-1">
           <a href=""><img src="img/redes/facebook-p.svg" alt=""></a>
           <a href=""><img src="img/redes/instagram-p.svg" alt=""></a>
           <a href=""><img src="img/redes/youtube-p.svg" alt=""></a>
@@ -103,13 +93,13 @@
       <nav>
         <span class="up-cs">informações</span>
         <ul class="ln-hgt">
-          <li><a class="clr-inh" href="bicicletas.html">Bicicletas</a></li>
-          <li><a class="clr-inh" href="seguros.html">Seguros</a></li>
-          <li><a class="clr-inh" href="contato.html">Contatos</a></li>
+          <li><a href="bicicletas.html">Bicicletas</a></li>
+          <li><a href="seguros.html">Seguros</a></li>
+          <li><a href="contato.html">Contatos</a></li>
         </ul>
       </nav>
     </section>
-    <p><a class="clr-inh" href="termos.html">Direitos reservados.</a></p>
+    <p class="mar-1tp"><a href="termos.html">Direitos reservados.</a></p>
   </footer>
 
 </body>
