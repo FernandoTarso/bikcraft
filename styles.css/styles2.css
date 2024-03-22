@@ -1,14 +1,22 @@
 :root {
-  --lg-bw: linear-gradient(180deg, black 0% 90%, white 90% 100%);
+  --lg-bw: linear-gradient(180deg, black 0% 85%, white 85% 100%);
   --lg-bw-2: linear-gradient(0deg, black 0% 90%, white 90% 100%);
   --lg-wbw: linear-gradient(
     180deg,
-    white 0% 10%,
-    black 10% 90%,
-    white 90% 100%
+    white 0% 13%,
+    black 13% 87%,
+    white 87% 100%
   );
   --lg-wb-hr: linear-gradient(270deg, black 0% 75%, white 75% 100%);
   --lg-wb-hr-2: linear-gradient(90deg, black 0% 50%, white 50% 100%);
+  --lg-ylw: linear-gradient(180deg, #ffbb00, #e4a30b, #a66f00);
+  --lg-ylw-2: linear-gradient(180deg, #ffffff, #e4a30b30, #a66f0040);
+  --lg-slv: linear-gradient(180deg, #9c9c9c, #717171, #595959);
+  --lg-slv-2: linear-gradient(180deg, #ffffff, #71717130, #59595940);
+  --lg-gw: linear-gradient(180deg, #404040 0% 50%, white 50% 100%);
+  --lg-gw-2: linear-gradient(180deg, #404040 0% 85%, white 85% 100%);
+  --lg-blk: linear-gradient(0deg, #111111, #2e2e2e, #404040);
+  --lg-wht: linear-gradient(180deg, #eeeeee, #cdcdcd, #b7b7b7);
 }
 
 html {
@@ -70,12 +78,21 @@ ol li:before {
 .wdt-30 {
   width: 30rem;
 }
+.wdt-45 {
+  width: 45rem;
+}
 
 .mar-res {
   margin: 0;
 }
 .mar-0a {
   margin: 0 auto;
+}
+.mar-02 {
+  margin: 0.2rem;
+}
+.mar-02vt {
+  margin: 0.2rem 0;
 }
 .mar-1 {
   margin: 1rem;
@@ -170,7 +187,7 @@ ol li:before {
 .jc-sa {
   justify-content: space-around;
 }
-.jc-s {
+.jc-se {
   justify-content: space-evenly;
 }
 .al-it {
@@ -183,11 +200,29 @@ ol li:before {
 .bg-blk {
   background: black;
 }
+.bg-blk-2 {
+  background: var(--lg-blk);
+}
 .bg-wht {
   background: white;
 }
+.bg-wht-2 {
+  background: var(--lg-wht);
+}
 .bg-gry {
-  background: gray;
+  background: #404040;
+}
+.bg-gw {
+  background: var(--lg-gw);
+}
+.bg-gw-2 {
+  background: var(--lg-gw-2);
+}
+.bg-slv {
+  background: var(--lg-slv);
+}
+.bg-slv-2 {
+  background: var(--lg-slv-2);
 }
 .bg-wbw {
   background: var(--lg-wbw);
@@ -199,7 +234,13 @@ ol li:before {
   background: var(--lg-bw-2);
 }
 .bg-ylw {
-  background: yellow;
+  background: #ffbb00;
+}
+.bg-ylw-2 {
+  background: var(--lg-ylw);
+}
+.bg-ylw-3 {
+  background: var(--lg-ylw-2);
 }
 .bg-wb-hr {
   background: var(--lg-wb-hr);
@@ -215,7 +256,13 @@ ol li:before {
   color: black;
 }
 .clr-ylw {
-  color: yellow;
+  color: #ffbb00;
+}
+.clr-slv {
+  color: silver;
+}
+.clr-gld {
+  color: gold;
 }
 
 .tal-rt {
@@ -225,16 +272,16 @@ ol li:before {
   text-transform: uppercase;
 }
 .fnt-ll {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
 }
 .fnt-l {
-  font-size: 2.3rem;
+  font-size: 2.4rem;
 }
 .fnt-ml {
   font-size: 2rem;
 }
 .fnt-m {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 .fnt-sm {
   font-size: 1.4rem;
