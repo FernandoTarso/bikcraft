@@ -49,6 +49,9 @@ ol {
   cursor: pointer;
 }
 
+.sd-48 {
+  max-width: 48%;
+}
 .sd-50 {
   max-width: 50%;
 }
@@ -84,6 +87,9 @@ ol {
 }
 .mar-1lt {
   margin-left: 1rem;
+}
+.mar-2lt {
+  margin-left: 2rem;
 }
 .mar-1hr {
   margin-left: 1rem;
@@ -230,6 +236,10 @@ ol {
 }
 .ln-hgt {
   line-height: 1.4;
+}
+
+.mark {
+  list-style: url(/img/icones/lista.svg);
 }
 
 .brd-res {
