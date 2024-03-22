@@ -44,6 +44,14 @@ ol {
   padding-inline-start: 0;
   list-style: none;
 }
+ol li:before {
+  content: counters(item, ".") " - ";
+  counter-increment: item;
+}
+
+.cnt-res {
+  counter-reset: item;
+}
 
 .pointer {
   cursor: pointer;
@@ -107,6 +115,9 @@ ol {
 }
 .pad-1 {
   padding: 1rem;
+}
+.pad-1lt {
+  padding-left: 1rem;
 }
 .pad-2 {
   padding: 2rem;
