@@ -9,90 +9,114 @@
 </head>
 
 <body>
-  <header class="flex jc-sb aln-ct wrap bg-blk fnt-l clr-wht pad-1rem">
-    <a href="index.html"><img src="img/bikcraft.svg" alt=""></a>
+  <header class="flx jc-sb al-it wrap bg-blk clr-wht pad-1">
+    <div>
+      <a href="index.html"><img src="img/bikcraft.svg" alt=""></a>
+    </div>
     <nav>
-      <ul class="flex jc-sb wrap gap-1rem mar-1rem">
-        <li><a class="clr-inh" href="bicicletas.html">Bicicletas</a></li>
-        <li><a class="clr-inh" href="seguros.html">Seguros</a></li>
-        <li><a class="clr-inh" href="contato.html">Contatos</a></li>
+      <ul class="flx jc-sb wrap gap-1 fnt-sm">
+        <li><a href="bicicletas.html">Bicicletas</a></li>
+        <li><a href="seguros.html">Seguros</a></li>
+        <li><a href="contato.html">Contatos</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <!-- duas colunas, seleção na primeira, info+entrega na segunda -->
-    <div class="bg-002 pd-01">
+  <section class="bg-gry pad-1">
+    <h1 class="fnt-ll clr-wht">solicite um orçamento<span class="clr-ylw">.</span></h1>
+  </section>
 
-      <!-- ponto amarelo -->
-      <h1 class="txt-lg txt-l">solicite um orçamento<span class="ylw">.</span></h1>
-      <form action="">
-        <div class="gd-01 pd-01">
-          <div class="bg-01 txt-l pd-01 bdr-lt">
+  <main class="bg-gry pad-1">
+    <form action="">
+      <div class="grd-2 bg-wb-hr-2 brd-05 fnt-sm">
+        <div class="pad-1 clr-wht">
+          <legend class="up-cs mar-1bt fnt-sm">bikcraft ou seguro?</legend>
+          <div class="flx gap-1">
+            <label class="bg-gry pad-rad blc brd-05 fit fnt-sm" for="bik">
+              <input id="bik" class="bg-gry pad-1 il-blc" name="bikseg" type="radio" value="1"> Bikcraft
+            </label>
+            <label class="bg-wht clr-blk pad-rad blc brd-05 fit fnt-sm" for="seg">
+              <input id="seg" name="bikseg" type="radio" value="2"> Seguro
+            </label>
+          </div>
+          <div id="">
             <!-- uppercase, detalhe amarelo -->
-            <legend class="mg-1em mg-up mg-tp">bikcraft ou seguro?</legend>
-            <div>
-              <input name="bikseg" type="radio" value="1"><span class="bt-01">Bikcraft</span>
-              <input name="bikseg" type="radio" value="2"><span class="bt-02">Seguro</span>
-            </div>
-            <div id="bik-opt">
-              <!-- uppercase, detalhe amarelo -->
-              <legend class="bike">escolha a sua:</legend>
-              <input name="bik" class="bike" type="radio"><span class="bt-01">Magic Might</span><br>
-              <input name="bik" class="bike" type="radio"><span class="bt-01">Nebula Cosmic</span><br>
-              <input name="bik" class="bike" type="radio"><span class="bt-01">Nimbus Stark</span>
-            </div>
-            <div id="seg-opt">
-              <!-- uppercase, detalhe amarelo -->
-              <legend class="mg-00" class="plano">escolha o plano:</legend>
-              <input name="seg" class="plano" type="radio"><span class="bt-01">Prata</span><br>
-              <input name="seg" class="plano" type="radio"><span class="bt-01">Ouro</span>
-            </div>
+            <legend class="up-cs mar-1vt fnt-sm">escolha a sua:</legend>
+            <label class="bg-gry pad-rad blc brd-05 fit fnt-sm mar-1vt" for="nimbus">
+              <input id="nimbus" class="bg-gry pad-1 il-blc" name="bike" type="radio" value="1"> Nimbus Stark
+            </label>
+            <label class="bg-gry pad-rad blc brd-05 fit fnt-sm mar-1vt" for="magic">
+              <input id="magic" class="bg-gry pad-1 il-blc" name="bike" type="radio" value="2"> Magic Might
+            </label>
+            <label class="bg-gry pad-rad blc brd-05 fit fnt-sm mar-1vt" for="nebula">
+              <input id="nebula" class="bg-gry pad-1 il-blc" name="bike" type="radio" value="1"> Nebula Cosmic
+            </label>
           </div>
-          <div class="bg-04 pd-01 bdr-rt">
-            <!-- upercase -->
-            <legend class="mg-1em mg-up up">dados pessoais</legend>
-            <div class="gd-01 pd-01">
-              <label class="txt-b" for="nome">Nome <input class="txt-b" id="nome" name="nome" type="text" placeholder="Nome"></label>
-              <label class="txt-b" for="sobrenome">Sobrenome <input class="txt-b" id="sobrenome" name="sobrenome" type="text" placeholder="Sobrenome"></label>
-              <label class="txt-b" for="cpf"> CPF <input class="txt-b" id="cpf" name="cpf" type="number" placeholder="000.000.000-00"></label>
-              <label class="txt-b" for="email">Email <input class="txt-b" id="email" name="email" type="email" placeholder="contato@email.com"></label>
-            </div>
-            <!-- upercase -->
-            <legend class="mg-00 mg-1em up">entrega</legend>
-            <div class="gd-01 pd-01">
-              <label class="txt-b" for="cep">CEP <input class="txt-b" id="cep" name="cep" type="number" placeholder="00000-000"></label>
-              <label class="txt-b" for="numero">Número <input class="txt-b" id="numero" name="numero" type="number" placeholder=""></label>
-              <label class="txt-b" for="logradouro">Logradouro <input class="txt-b" id="logradouro" name="logradouro" type="text" placeholder="Rua, Avenida..."></label>
-              <label class="txt-b" for="bairro">Bairro <input class="txt-b" id="bairro" name="bairro" type="text" placeholder=""></label>
-              <label class="txt-b" for="cidade">Cidade <input class="txt-b" id="cidade" name="cidade" type="text" placeholder=""></label>
-              <label class="txt-b" for="estado">Estado <input class="txt-b" id="estado" name="estado" type="text" placeholder=""></label>
-              <!-- <select name="" id="">
-                <option value="">Selecione</option>
-              </select> -->
-            </div>
-            <input class="bt-00 up cl-2 mg-bt" type="submit" value="solicitar orçamento">
+          <div id="">
+            <legend class="mar-1vt up-cs fnt-sm">escolha o plano:</legend>
+            <label class="bg-gry pad-rad blc brd-05 fit fnt-sm mar-1vt" for="prata">
+              <input id="prata" class="bg-gry pad-1 il-blc" name="seg" type="radio" value="1"> Prata
+            </label>
+            <label class="bg-gry pad-rad blc brd-05 fit fnt-sm mar-1vt" for="ouro">
+              <input id="ouro" class="bg-gry pad-1 il-blc" name="seg" type="radio" value="1"> Ouro
+            </label>
           </div>
-          <!-- link estilo botao, uppercase -->
-
         </div>
-      </form>
-
-    </div>
+        <div class="pad-1">
+          <legend class="up-cs">dados pessoais</legend>
+          <div class="pad-1">
+            <label class="blc" for="nome">Nome <input class="blc" id="nome" name="nome" type="text" placeholder="Nome"></label>
+            <label class="blc" for="sobrenome">Sobrenome <input class="blc" id="sobrenome" name="sobrenome" type="text" placeholder="Sobrenome"></label>
+            <label class="blc" for="cpf"> CPF <input class="blc" id="cpf" name="cpf" type="number" placeholder="000.000.000-00"></label>
+            <label class="blc" for="email">Email <input class="blc" id="email" name="email" type="email" placeholder="contato@email.com"></label>
+          </div>
+          <legend class="up-cs">entrega</legend>
+          <div class="pad-1 grd-2">
+            <div>
+              <label class="blc" for="cep">CEP
+                <input class="blc" id="cep" name="cep" type="number" placeholder="00000-000">
+              </label>
+              <label class="blc" for="logradouro">Logradouro
+                <input class="blc" id="logradouro" name="logradouro" type="text" placeholder="Rua, Avenida...">
+              </label>
+              <label class="blc" for="cidade">Cidade
+                <input class="blc" id="cidade" name="cidade" type="text" placeholder="">
+              </label>
+            </div>
+            <div>
+              <label class="blc" for="numero">Número
+                <input class="blc" id="numero" name="numero" type="number" placeholder="">
+              </label>
+              <label class="blc" for="bairro">Bairro
+                <input class="blc" id="bairro" name="bairro" type="text" placeholder="">
+              </label>
+              <label class="blc" for="estado">Estado <select class="blc" name="estado" id="estado">
+                  <option value="0">Estado</option>
+                  <option value="1">Paraná</option>
+                  <option value="2">São Paulo</option>
+                  <option value="3">Rio de Janeiro</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <input class="bg-ylw il-blc brd-res  brd-05 pad-1 clr-blk fnt-s up-cs mar-1" type="submit" value="solicitar orçamento">
+        </div>
+      </div>
+    </form>
   </main>
 
-  <footer class="bg-blk fnt-l pad-1rem clr-wht">
-    <section class="flex jc-sb wrap gap-1rem">
-      <a href=" index.html"><img src="img/bikcraft.svg" alt=""></a>
+  <footer class="bg-blk fnt-sm pad-1 clr-wht">
+    <section class="flx jc-sb wrap gap-1">
+      <a href="index.html"><img src="img/bikcraft.svg" alt=""></a>
       <div>
         <span class="up-cs">contato</span>
         <ul class="ln-hgt">
           <li>-55 (41) 99999-9999</li>
           <li>email.ficticio@gmail.com</li>
-          <div class="line mar-1rem-vt"></div>
-          <li>Rua tal de tal, número tal<br>Bairo Tal</li>
+          <div class="line mar-1vt"></div>
+          <li>Rua tal de tal, número tal<br>Bairro Tal</li>
         </ul>
-        <div class="flex gap-1rem">
+        <div class="flex gap-1">
           <a href=""><img src="img/redes/facebook-p.svg" alt=""></a>
           <a href=""><img src="img/redes/instagram-p.svg" alt=""></a>
           <a href=""><img src="img/redes/youtube-p.svg" alt=""></a>
@@ -101,13 +125,13 @@
       <nav>
         <span class="up-cs">informações</span>
         <ul class="ln-hgt">
-          <li><a class="clr-inh" href="bicicletas.html">Bicicletas</a></li>
-          <li><a class="clr-inh" href="seguros.html">Seguros</a></li>
-          <li><a class="clr-inh" href="contato.html">Contatos</a></li>
+          <li><a href="bicicletas.html">Bicicletas</a></li>
+          <li><a href="seguros.html">Seguros</a></li>
+          <li><a href="contato.html">Contatos</a></li>
         </ul>
       </nav>
     </section>
-    <p><a class="clr-inh" href="termos.html">Direitos reservados.</a></p>
+    <p class="mar-1tp"><a href="termos.html">Direitos reservados.</a></p>
   </footer>
 
 </body>

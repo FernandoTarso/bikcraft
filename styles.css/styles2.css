@@ -45,6 +45,10 @@ ol {
   list-style: none;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .sd-50 {
   max-width: 50%;
 }
@@ -103,6 +107,9 @@ ol {
 }
 .pad-3 {
   padding: 3rem;
+}
+.pad-rad {
+  padding: 1rem 1rem 1rem 0.5rem;
 }
 
 .il-blc {
