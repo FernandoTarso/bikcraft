@@ -330,9 +330,15 @@ ol li:before {
   border-radius: 50%;
   box-shadow: 1px 1px 2px 2px #dddddd, -1px -1px 2px 2px #dddddd;
 }
+#fb2:hover {
+  fill: #1877f2;
+}
 #ig:hover {
   border-radius: 28%;
   box-shadow: 1px 1px 2px 2px #dddddd, -1px -1px 2px 2px #dddddd;
+}
+#ig2:hover {
+  fill: #e1306c;
 }
 #yt:hover {
   background: linear-gradient(
@@ -342,4 +348,7 @@ ol li:before {
     #000000 65% 100%
   );
   border-radius: 35%;
+}
+#yt2:hover {
+  fill: #ff0000;
 }
