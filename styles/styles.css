@@ -314,13 +314,16 @@ ol li:before {
   border-radius: 0.5rem;
 }
 
+.hov-slv:hover {
+  box-shadow: 1px 1px 2px 1px #717171, -1px -1px 2px 1px #717171;
+  color: #eeeeee;
+}
 .hov:hover {
   box-shadow: 1px 1px 2px 1px #a66f00, -1px -1px 2px 1px #a66f00;
   color: #eeeeee;
 }
 .hov-2:hover {
   background: var(--lg-bgb);
-  /* color: #000000; */
 }
 .hov-3:hover {
   box-shadow: 1px 1px 2px 1px #a66f00, -1px -1px 2px 1px #a66f00;
