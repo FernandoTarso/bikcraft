@@ -318,6 +318,9 @@ ol li:before {
   box-shadow: 1px 1px 2px 1px #717171, -1px -1px 2px 1px #717171;
   color: #eeeeee;
 }
+.hov-wht:hover {
+  box-shadow: 1px 1px 2px 1px #eeeeee, -1px -1px 2px 1px #eeeeee;
+}
 .hov:hover {
   box-shadow: 1px 1px 2px 1px #a66f00, -1px -1px 2px 1px #a66f00;
   color: #eeeeee;
