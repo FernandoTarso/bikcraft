@@ -17,6 +17,7 @@
   --lg-gw-2: linear-gradient(180deg, #404040 0% 85%, white 85% 100%);
   --lg-blk: linear-gradient(0deg, #111111, #2e2e2e, #404040);
   --lg-wht: linear-gradient(180deg, #eeeeee, #cdcdcd, #b7b7b7);
+  --lg-bgb: linear-gradient(0deg, #111111 0%, #9c9c9c 15%, #111111 85%);
 }
 
 html {
@@ -303,9 +304,42 @@ ol li:before {
 .brd-res {
   border: none;
 }
+.brd-2trs {
+  border: 2px solid transparent;
+}
 .brd-03 {
   border-radius: 0.3rem;
 }
 .brd-05 {
   border-radius: 0.5rem;
+}
+
+.hov:hover {
+  box-shadow: 1px 1px 2px 1px #a66f00, -1px -1px 2px 1px #a66f00;
+  color: #eeeeee;
+}
+.hov-2:hover {
+  background: var(--lg-bgb);
+  /* color: #000000; */
+}
+.hov-3:hover {
+  box-shadow: 1px 1px 2px 1px #a66f00, -1px -1px 2px 1px #a66f00;
+  color: #eeeeee;
+}
+#fb:hover {
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px 2px #dddddd, -1px -1px 2px 2px #dddddd;
+}
+#ig:hover {
+  border-radius: 28%;
+  box-shadow: 1px 1px 2px 2px #dddddd, -1px -1px 2px 2px #dddddd;
+}
+#yt:hover {
+  background: linear-gradient(
+    0deg,
+    #000000 0% 35%,
+    #ffffff 35% 65%,
+    #000000 65% 100%
+  );
+  border-radius: 35%;
 }
