@@ -26,40 +26,37 @@
     <h1 class="fnt-ll clr-wht">solicite um orçamento<span class="clr-ylw">.</span></h1>
   </section>
 
-  <main class="bg-gry pad-1">
+  <main class="bg-gw pad-1">
     <form action="">
       <div class="grd-2 bg-wb-hr-2 brd-05 fnt-sm">
         <div class="pad-1 clr-wht">
-          <legend class="up-cs mar-1bt fnt-sm">bikcraft ou seguro?</legend>
+          <legend class="up-cs mar-1bt fnt-sm mk-1 mar-1lt">bikcraft ou seguro?</legend>
           <div class="flx gap-1">
-            <label class="bg-slv pad-rad blc brd-05 fit fnt-sm hov-slv" for="bik">
-              <input id="bik" class="bg-slv pad-1 il-blc" name="bikseg" type="radio" value="1"> Bikcraft
-            </label>
-            <label class="bg-wht-2 clr-blk pad-rad blc brd-05 fit fnt-sm hov-wht" for="seg">
-              <input id="seg" name="bikseg" type="radio" value="2"> Seguro
-            </label>
-          </div>
-          <div id="esc-bik">
-            <!-- uppercase, detalhe amarelo -->
-            <legend class="up-cs mar-1vt fnt-sm mk-1 mar-1lt">escolha a sua:</legend>
-            <label class="bg-slv pad-rad blc brd-05 fit fnt-sm mar-1vt hov-slv" for="nimbus">
-              <input id="nimbus" class="bg-slv pad-1 il-blc" name="bike" type="radio" value="1"> Nimbus Stark
-            </label>
-            <label class="bg-slv pad-rad blc brd-05 fit fnt-sm mar-1vt hov-slv" for="magic">
-              <input id="magic" class="bg-slv pad-1 il-blc" name="bike" type="radio" value="2"> Magic Might
-            </label>
-            <label class="bg-slv pad-rad blc brd-05 fit fnt-sm mar-1vt hov-slv" for="nebula">
-              <input id="nebula" class="bg-slv pad-1 il-blc" name="bike" type="radio" value="1"> Nebula Cosmic
-            </label>
-          </div>
-          <div id="esc-seg">
-            <legend class="mar-1vt up-cs fnt-sm mk-1 mar-1lt">escolha o plano:</legend>
-            <label class="bg-slv pad-rad blc brd-05 fit fnt-sm mar-1vt hov-slv" for="prata">
-              <input id="prata" class="bg-gry pad-1 il-blc" name="seg" type="radio" value="1"> Prata
-            </label>
-            <label class="bg-ylw-2 pad-rad blc brd-05 fit fnt-sm mar-1vt hov" for="ouro">
-              <input id="ouro" class="bg-gry pad-1 il-blc" name="seg" type="radio" value="1"> Ouro
-            </label>
+            <details name="bikseg">
+              <summary class="bg-slv pad-rad blc brd-05 fit fnt-sm hov-slv pointer"> Bikcraft
+              </summary>
+              <legend class="up-cs mar-1vt fnt-sm mk-1 mar-1lt">escolha a sua:</legend>
+              <label class="bg-slv pad-rad blc brd-05 fit fnt-sm mar-1vt hov-slv" for="nimbus">
+                <input id="nimbus" class="bg-slv pad-1 il-blc" name="bike" type="radio" value="1"> Nimbus Stark
+              </label>
+              <label class="bg-slv pad-rad blc brd-05 fit fnt-sm mar-1vt hov-slv" for="magic">
+                <input id="magic" class="bg-slv pad-1 il-blc" name="bike" type="radio" value="2"> Magic Might
+              </label>
+              <label class="bg-slv pad-rad blc brd-05 fit fnt-sm mar-1vt hov-slv" for="nebula">
+                <input id="nebula" class="bg-slv pad-1 il-blc" name="bike" type="radio" value="1"> Nebula Cosmic
+              </label>
+            </details>
+            <details name="bikseg">
+              <summary class="bg-wht-2 clr-blk pad-rad blc brd-05 fit fnt-sm hov-wht pointer"> Seguro
+              </summary>
+              <legend class="mar-1vt up-cs fnt-sm mk-1 mar-1lt">escolha o plano:</legend>
+              <label class="bg-slv pad-rad blc brd-05 fit fnt-sm mar-1vt hov-slv" for="prata">
+                <input id="prata" class="bg-gry pad-1 il-blc" name="seg" type="radio" value="1"> Prata
+              </label>
+              <label class="bg-ylw-2 pad-rad blc brd-05 fit fnt-sm mar-1vt hov" for="ouro">
+                <input id="ouro" class="bg-gry pad-1 il-blc" name="seg" type="radio" value="1"> Ouro
+              </label>
+            </details>
           </div>
         </div>
         <div class="pad-1 clr-bw">
