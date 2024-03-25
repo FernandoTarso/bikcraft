@@ -10,6 +10,7 @@
   --lg-wb-hr: linear-gradient(270deg, black 0% 75%, white 75% 100%);
   --lg-wb-hr-2: linear-gradient(90deg, black 0% 50%, white 50% 100%);
   --lg-ylw: linear-gradient(180deg, #ffbb00, #e4a30b, #a66f00);
+  --lg-ylw-hr: linear-gradient(90deg, #ffbb00, #e4a30b, #a66f00);
   --lg-ylw-2: linear-gradient(180deg, #ffffff, #e4a30b30, #a66f0040);
   --lg-slv: linear-gradient(180deg, #9c9c9c, #717171, #595959);
   --lg-slv-2: linear-gradient(180deg, #ffffff, #71717130, #59595940);
@@ -57,6 +58,33 @@ ol li:before {
   content: counters(item, ".") " - ";
   counter-increment: item;
 }
+.mk-1 {
+  position: relative;
+}
+.mk-1:before {
+  content: "";
+  position: absolute;
+  height: 0.4rem;
+  width: 0.8rem;
+  background: var(--lg-ylw-hr);
+  left: -1rem;
+  top: 0.7rem;
+}
+
+.hide {
+  visibility: visible;
+}
+.h-4 {
+  height: 4rem;
+  background-color: transparent;
+}
+.h-100 {
+  height: 100%;
+}
+
+.cov {
+  object-fit: cover;
+}
 
 .cnt-res {
   counter-reset: item;
@@ -76,6 +104,11 @@ ol li:before {
   width: fit-content;
 }
 
+.ms-75 {
+  max-height: 75%;
+  max-width: 75%;
+  box-sizing: border-box;
+}
 .wdt-30 {
   width: 30rem;
 }
@@ -113,6 +146,9 @@ ol li:before {
 }
 .mar-1lt {
   margin-left: 1rem;
+}
+.mar-15lt {
+  margin-left: 1.5rem;
 }
 .mar-2lt {
   margin-left: 2rem;
@@ -178,6 +214,12 @@ ol li:before {
 }
 .gap-2 {
   gap: 2rem;
+}
+.jc-st {
+  justify-content: flex-star;
+}
+.jc-ed {
+  justify-content: flex-end;
 }
 .jc-ct {
   justify-content: center;
@@ -357,4 +399,49 @@ ol li:before {
 }
 #yt2:hover {
   fill: #ff0000;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+  :root {
+    --lg-wbw: linear-gradient(
+      180deg,
+      white 0% 8%,
+      black 8% 92%,
+      white 92% 100%
+    );
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 13px;
+  }
+  .grd-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hide {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+  .h-4 {
+    height: 0;
+  }
+  :root {
+    --lg-bw: #000000;
+    --lg-wbw: #000000;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 12px;
+  }
 }
