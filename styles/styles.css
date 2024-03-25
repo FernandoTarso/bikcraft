@@ -70,6 +70,14 @@ ol li:before {
   left: -1rem;
   top: 0.7rem;
 }
+.rel {
+  position: relative;
+}
+.tr-0 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 .hide {
   visibility: visible;
@@ -437,7 +445,9 @@ ol li:before {
   }
   :root {
     --lg-bw: #000000;
+    --lg-bw-2: #000000;
     --lg-wbw: #000000;
+    --lg-wb-hr: #000000;
   }
 }
 @media (max-width: 400px) {
