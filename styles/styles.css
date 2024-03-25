@@ -434,6 +434,7 @@ ol li:before {
   .grd-2 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .hide {
     visibility: hidden;
@@ -443,11 +444,15 @@ ol li:before {
   .h-4 {
     height: 0;
   }
+  .clr-bw {
+    color: #ffffff;
+  }
   :root {
     --lg-bw: #000000;
     --lg-bw-2: #000000;
     --lg-wbw: #000000;
     --lg-wb-hr: #000000;
+    --lg-wb-hr-2: #000000;
   }
 }
 @media (max-width: 400px) {
