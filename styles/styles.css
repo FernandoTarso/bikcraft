@@ -217,6 +217,10 @@ details > summary {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.grd-2-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .clm-ac {
   grid-column: 1 / -1;
 }
@@ -473,6 +477,10 @@ details > summary {
       black 8% 92%,
       white 92% 100%
     );
+  }
+  .grd-2-3 {
+    display: flex;
+    flex-direction: column;
   }
   .sd-60 {
     max-width: 80%;
