@@ -430,6 +430,24 @@ details > summary {
   background: var(--lg-ylw-2);
 }
 
+.ord-2 {
+  order: 2;
+}
+.ord-3 {
+  order: 3;
+}
+.ord-4 {
+  order: 4;
+}
+#bik-sel :not(:first-child) {
+  width: 48.03%;
+}
+#bik-sel img:active {
+  width: 100%;
+  border: 2px solid #dddddd;
+  order: 1;
+}
+
 @media (max-width: 1000px) {
   html {
     font-size: 15px;
