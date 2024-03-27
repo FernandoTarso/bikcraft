@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  font-family: Tahoma;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -61,6 +61,27 @@ ol li:before {
 
 details > summary {
   list-style: none;
+}
+
+.pop-r {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.pop-sb {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.rob-r {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.rob-m {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .mk-1 {
@@ -154,6 +175,9 @@ details > summary {
 .mar-1tp {
   margin-top: 1rem;
 }
+.mar-5bt {
+  margin-bottom: 5rem;
+}
 .mar-1bt {
   margin-bottom: 1rem;
 }
@@ -233,6 +257,9 @@ details > summary {
 }
 .wrap {
   flex-wrap: wrap;
+}
+.gap-05 {
+  gap: 0.5rem;
 }
 .gap-1 {
   gap: 1rem;
@@ -326,8 +353,17 @@ details > summary {
 .clr-ylw {
   color: #ffbb00;
 }
+.clr-dyl {
+  color: #332200;
+}
 .clr-slv {
   color: silver;
+}
+.clr-lgr {
+  color: #b2b2b2;
+}
+.clr-dgr {
+  color: #111111;
 }
 .clr-gld {
   color: gold;
@@ -352,7 +388,7 @@ details > summary {
   font-size: 1.8rem;
 }
 .fnt-sm {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 .fnt-s {
   font-size: 1.2rem;
@@ -361,7 +397,10 @@ details > summary {
   font-size: 0.9rem;
 }
 .ln-hgt {
-  line-height: 1.4;
+  line-height: 1.2;
+}
+.ln-hgt2 {
+  line-height: 1.45;
 }
 
 .mark {
@@ -370,9 +409,6 @@ details > summary {
 
 .brd-res {
   border: none;
-}
-.brd-2trs {
-  border: 2px solid transparent;
 }
 .brd-03 {
   border-radius: 0.3rem;
@@ -383,21 +419,21 @@ details > summary {
 
 .hov-slv:hover {
   box-shadow: 1px 1px 2px 1px #717171, -1px -1px 2px 1px #717171;
-  color: #eeeeee;
+  /* color: #eeeeee; */
 }
 .hov-wht:hover {
   box-shadow: 1px 1px 2px 1px #eeeeee, -1px -1px 2px 1px #eeeeee;
 }
 .hov:hover {
   box-shadow: 1px 1px 2px 1px #a66f00, -1px -1px 2px 1px #a66f00;
-  color: #eeeeee;
+  /* color: #eeeeee; */
 }
 .hov-2:hover {
   background: var(--lg-bgb);
 }
 .hov-3:hover {
   box-shadow: 1px 1px 2px 1px #a66f00, -1px -1px 2px 1px #a66f00;
-  color: #eeeeee;
+  /* color: #eeeeee; */
 }
 #fb:hover {
   border-radius: 50%;
@@ -426,6 +462,13 @@ details > summary {
   fill: #ff0000;
 }
 
+#termos > li:nth-child(odd) {
+  background: #dedede;
+}
+
+#faq li:nth-child(odd) {
+  background: #dedede;
+}
 #faq details:hover {
   background: var(--lg-ylw-2);
   cursor: pointer;
@@ -448,7 +491,7 @@ details > summary {
 }
 #bik-sel img:active {
   width: 100%;
-  border: 2px solid #dddddd;
+  box-shadow: 1px 1px 0 1px #eeeeee, -1px -1px 0 1px #eeeeee;
   order: 1;
 }
 

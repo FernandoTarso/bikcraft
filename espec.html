@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bikcraft</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,7 +17,7 @@
       <a class="hov-2 pad-08 brd-05 blc" href="index.html"><img src="img/bikcraft.svg" alt=""></a>
     </div>
     <nav>
-      <ul class="flx jc-sb wrap gap-1 fnt-sm">
+      <ul class="flx jc-sb wrap gap-1 fnt-sm pop-r">
         <li><a class="hov-2 pad-02 brd-05" href="bicicletas.html">Bicicletas</a></li>
         <li><a class="hov-2 pad-02 brd-05" href="seguros.html">Seguros</a></li>
         <li><a class="hov-2 pad-02 brd-05" href="contato.html">Contatos</a></li>
@@ -22,16 +25,16 @@
     </nav>
   </header>
 
-  <main class="grd-2 bg-gw-2">
-    <div class="">
-      <div class="pad-1 clr-wht">
+  <main class="grd-2 bg-gw-2 pop-r">
+    <div>
+      <div class="pad-1 clr-wht pop-sb">
         <span class="up-cs fnt-m">r$ XXXX</span>
         <h1 class="fnt-ll">bike selecionada</h1>
       </div>
       <div id="bik-sel" class="flx wrap gap-1 pad-1">
-        <img id="bik-1" class="brd-2trs pointer ord-2" src="img/bicicletas/nimbus.jpg" alt="">
-        <img id="bik-2" class="brd-2trs pointer ord-3" src="img/bicicletas/magic.jpg" alt="">
-        <img id="bik-3" class="brd-2trs pointer ord-4" src="img/bicicletas/nebula.jpg" alt="">
+        <img id="bik-1" class="pointer ord-2" src="img/bicicletas/nimbus.jpg" alt="">
+        <img id="bik-2" class="pointer ord-3" src="img/bicicletas/magic.jpg" alt="">
+        <img id="bik-3" class="pointer ord-4" src="img/bicicletas/nebula.jpg" alt="">
       </div>
     </div>
 
@@ -40,18 +43,22 @@
         <p class="mar-1vt fnt-m clr-wht ">descrição da bike selecionada</p>
         <div class="flx al-it gap-1">
           <div class="il-blc">
-            <a class="bg-ylw-2 il-blc brd-05 pad-1 clr-blk fnt-s up-cs hov" href="orcamento.html">comprar agora</a>
+            <a class="bg-ylw-2 il-blc brd-05 pad-1 clr-dyl fnt-s up-cs hov rob-m" href="orcamento.html">comprar agora</a>
           </div>
           <div class="il-blc clr-wht">
-            <div class="blc bg-blk-2 brd-03 pad-02 mar-02"><img src="img/icones/entrega.svg" alt=""><span> entrega em 5 dias</span></div>
-            <div class="blc bg-blk-2 brd-03 pad-02 mar-02"><img src="img/icones/estoque.svg" alt=""><span> 18 em estoque</span></div>
+            <div class="blc bg-blk-2 brd-03 pad-02 mar-02">
+              <div class="flx gap-05 al-it"><img src="img/icones/entrega.svg" alt=""><span> entrega em 5 dias</span></div>
+            </div>
+            <div class="blc bg-blk-2 brd-03 pad-02 mar-02">
+              <div class="flx gap-05 al-it"><img src="img/icones/estoque.svg" alt=""><span> 18 em estoque</span></div>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="bg-blk clr-wht fnt-sm mar-1 pad-1 brd-05">
-        <span class="blc up-cs mar-1bt clm-ac">informações</span>
-        <div class="grd-2-3 gap-1">
+        <span class="blc up-cs mar-1bt clm-ac rob-m">informações</span>
+        <div class="grd-2-3 gap-1 pop-r clr-lgr">
           <div>
             <img class="blc mar-1vt" src="img/icones/eletrica.svg" alt="">
             <span class="blc mar-1vt">Motor Elétrico</span>
@@ -75,8 +82,8 @@
         </div>
       </div>
 
-      <div class="bg-blk mar-1 clr-wht fnt-sm pad-1 brd-05">
-        <span class="blc up-cs mar-1vt">ficha técnica</span>
+      <div class="bg-blk mar-1 clr-wht fnt-sm pad-1 brd-05 pop-r clr-lgr">
+        <span class="blc up-cs mar-1vt rob-m clr-wht">ficha técnica</span>
         <p class="flx jc-sb">
           <span class="il-blc">Peso</span><span class="il-blc">XX</span>
         </p>
@@ -99,8 +106,8 @@
     </div>
   </main>
 
-  <section class="grd-2 mar-1">
-    <h2 class="fnt-ll clm-ac mar-1"> outras bicicletas<span class="clr-ylw">.</span></h2>
+  <section class="grd-2 mar-1 rob-m">
+    <h2 class="fnt-ll clm-ac mar-1 pop-sb"> outras bicicletas<span class="clr-ylw">.</span></h2>
     <div class="flx jc-ct">
       <div>
         <img class="blc" src="img/bicicleta/nimbus2.jpg" alt="" width="500">
@@ -117,12 +124,16 @@
 
   <section class="bg-bw-2 clr-wht grd-2">
     <div>
-      <img class="blc" src="img/fotos/seguros.jpg" alt="">
+      <img class="blc cov h-100" src="img/fotos/seguros.jpg" alt="">
     </div>
     <div class="flx clm jc-ct">
-      <h2 class="mar-1 fnt-ll">Pedale tranquilo com o nosso <span class="clr-ylw">seguro.</span></h2>
-      <p class="mar-1 fnt-sm">Inscreva-se em um dos nossos planos do nosso seguro Bikcraft e aproveite diversas vantagens.</p>
-      <a class="bg-ylw-2 il-blc brd-05 pad-1 clr-blk fnt-s up-cs mar-1 fit hov" href="orcamento.html">comprar agora</a>
+      <div class="blc h-4"></div>
+      <h2 class="mar-1 ln-hgt fnt-ll pop-sb">Pedale tranquilo com o nosso <span class="clr-ylw">seguro.</span></h2>
+      <p class="mar-1 ln-hgt fnt-m pop-r">Inscreva-se em um dos nossos planos do nosso seguro Bikcraft e aproveite diversas vantagens.</p>
+      <div class="flx jc-ed">
+        <img class="il-blc" src="img/dec/bottom-right.svg" alt="" height="52">
+      </div>
+      <a class="bg-ylw-2 il-blc brd-05 pad-1 clr-dyl fnt-s up-cs mar-1 mar-5bt fit hov rob-m" href="orcamento.html">comprar agora</a>
     </div>
 
   </section>
@@ -133,8 +144,8 @@
         <a class="hov-2 pad-08 brd-05 blc" href="index.html"><img src="img/bikcraft.svg" alt=""></a>
       </div>
       <div>
-        <span class="up-cs">contato</span>
-        <ul class="ln-hgt">
+        <span class="up-cs rob-m">contato</span>
+        <ul class="ln-hgt2 pop-r">
           <li>-55 (41) 99999-9999</li>
           <li> email.fictício@gmail.com</li>
           <li> Rua tal de tal, número tal</li>
@@ -147,15 +158,15 @@
         </div>
       </div>
       <nav>
-        <span class="up-cs">informações</span>
-        <ul class="ln-hgt">
+        <span class="up-cs rob-m">informações</span>
+        <ul class="ln-hgt2 pop-r">
           <li><a class="hov-2 pad-02 brd-05" href="bicicletas.html">Bicicletas</a></li>
           <li><a class="hov-2 pad-02 brd-05" href="seguros.html">Seguros</a></li>
           <li><a class="hov-2 pad-02 brd-05" href="contato.html">Contatos</a></li>
         </ul>
       </nav>
     </section>
-    <p class="mar-1tp fnt-m"><a class="hov-2 pad-08 brd-05 blc fit" href="termos.html">Direitos reservados.</a></p>
+    <p class="mar-1tp fnt-m rob-r"><a class="hov-2 pad-08 brd-05 blc fit" href="termos.html">Direitos reservados.</a></p>
   </footer>
 
 </body>
