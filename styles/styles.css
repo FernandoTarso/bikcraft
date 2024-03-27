@@ -422,35 +422,41 @@ details > summary {
 
 .hov-slv:hover {
   box-shadow: 1px 1px 2px 1px #717171, -1px -1px 2px 1px #717171;
-  /* color: #eeeeee; */
+  transition: 0.2s;
 }
 .hov-wht:hover {
   box-shadow: 1px 1px 2px 1px #eeeeee, -1px -1px 2px 1px #eeeeee;
+  transition: 0.2s;
 }
 .hov:hover {
   box-shadow: 1px 1px 2px 1px #a66f00, -1px -1px 2px 1px #a66f00;
-  /* color: #eeeeee; */
+  transition: 0.2s;
 }
 .hov-2:hover {
-  background: var(--lg-bgb);
+  background: #9c9c9c30;
+  transition: 0.2s;
 }
 .hov-3:hover {
   box-shadow: 1px 1px 2px 1px #a66f00, -1px -1px 2px 1px #a66f00;
-  /* color: #eeeeee; */
+  transition: 0.2s;
 }
 #fb:hover {
   border-radius: 50%;
   box-shadow: 1px 1px 2px 2px #dddddd, -1px -1px 2px 2px #dddddd;
+  transition: 0.2s;
 }
 #fb2:hover {
   fill: #1877f2;
+  transition: 0.2s;
 }
 #ig:hover {
   border-radius: 28%;
   box-shadow: 1px 1px 2px 2px #dddddd, -1px -1px 2px 2px #dddddd;
+  transition: 0.2s;
 }
 #ig2:hover {
   fill: #e1306c;
+  transition: 0.2s;
 }
 #yt:hover {
   background: linear-gradient(
@@ -463,6 +469,7 @@ details > summary {
 }
 #yt2:hover {
   fill: #ff0000;
+  transition: 0.2s;
 }
 
 #termos > li:nth-child(odd) {
