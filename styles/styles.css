@@ -49,6 +49,10 @@ iframe {
   max-width: 100%;
 }
 
+img[src$=".jpg"] {
+  border-radius: 0.5rem;
+}
+
 ul,
 ol {
   padding-inline-start: 0;
@@ -85,16 +89,15 @@ details > summary {
 }
 
 .mk-1 {
-  position: relative;
+  display: flex;
 }
 .mk-1:before {
+  display: inline-block;
   content: "";
-  position: absolute;
   height: 0.4rem;
   width: 0.8rem;
   background: var(--lg-ylw-hr);
-  left: -1rem;
-  top: 0.7rem;
+  margin-right: 0.2rem;
 }
 .rel {
   position: relative;
