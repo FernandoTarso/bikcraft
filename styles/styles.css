@@ -178,11 +178,14 @@ details > summary {
 .mar-1tp {
   margin-top: 1rem;
 }
-.mar-5bt {
-  margin-bottom: 5rem;
+.mar-5tp {
+  margin-top: 5rem;
 }
 .mar-1bt {
   margin-bottom: 1rem;
+}
+.mar-5bt {
+  margin-bottom: 5rem;
 }
 .mar-1vt {
   margin-top: 1rem;
@@ -543,7 +546,7 @@ details > summary {
     width: 0;
   }
   .h-4 {
-    height: 0;
+    height: 4rem;
   }
   .clr-bw {
     color: #ffffff;
