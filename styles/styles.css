@@ -71,7 +71,7 @@ details > summary {
   min-width: 280px;
 }
 .scroll {
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
 .pop-r {
