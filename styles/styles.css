@@ -167,6 +167,9 @@ details > summary {
 .mar-res {
   margin: 0;
 }
+.mar-a {
+  margin: auto;
+}
 .mar-0a {
   margin: 0 auto;
 }
@@ -197,6 +200,10 @@ details > summary {
 .mar-1vt {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.mar-3vt {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .mar-1lt {
   margin-left: 1rem;
@@ -260,6 +267,10 @@ details > summary {
 .grd-2-3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.grd-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 .clm-ac {
   grid-column: 1 / -1;
@@ -426,6 +437,10 @@ details > summary {
 .brd-res {
   border: none;
 }
+.brd-lgr {
+  border-bottom: #b7b7b7 solid 2px;
+  border-right: #b7b7b7 solid 2px;
+}
 .brd-03 {
   border-radius: 0.3rem;
 }
@@ -485,6 +500,14 @@ details > summary {
   transition: 0.2s;
 }
 
+#parc li:nth-child(n + 5) {
+  border-bottom: none;
+}
+#parc li:nth-child(4),
+#parc li:nth-child(8) {
+  border-right: none;
+}
+
 #termos > li:nth-child(odd) {
   background: #dedede;
 }
@@ -534,6 +557,22 @@ details > summary {
     display: flex;
     flex-direction: column;
   }
+  .grd-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #parc li {
+    border-bottom: #b7b7b7 solid 2px !important;
+  }
+  #parc li:nth-child(2),
+  #parc li:nth-child(6) {
+    border-right: none;
+  }
+  #parc li:nth-child(n + 7) {
+    border-bottom: none !important;
+  }
+  #parc {
+    margin: auto;
+  }
   .sd-60 {
     max-width: 80%;
   }
@@ -564,6 +603,9 @@ details > summary {
     --lg-wbw: #000000;
     --lg-wb-hr: #000000;
     --lg-wb-hr-2: #000000;
+  }
+  #parc li {
+    padding: 0.7rem;
   }
   .sd-60 {
     max-width: 90%;
