@@ -508,6 +508,24 @@ details > summary {
   border-right: none;
 }
 
+#depo {
+  position: relative;
+}
+#depo::after,
+#depo::before {
+  position: absolute;
+  font-size: 6rem;
+  color: #e4a30b;
+}
+#depo::before {
+  content: "“";
+  left: -2rem;
+  top: -2rem;
+}
+#depo::after {
+  content: "”";
+}
+
 #termos > li:nth-child(odd) {
   background: #dedede;
 }
