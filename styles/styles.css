@@ -437,6 +437,9 @@ details > summary {
 .brd-res {
   border: none;
 }
+.brd-0 {
+  border-radius: 0 !important;
+}
 .brd-lgr {
   border-bottom: #b7b7b7 solid 2px;
   border-right: #b7b7b7 solid 2px;
