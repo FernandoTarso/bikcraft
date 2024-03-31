@@ -9,6 +9,7 @@
   );
   --lg-wb-hr: linear-gradient(270deg, black 0% 75%, white 75% 100%);
   --lg-wb-hr-2: linear-gradient(90deg, black 0% 50%, white 50% 100%);
+  --lg-wb-hr-3: linear-gradient(90deg, black 0% 33%, white 33% 100%);
   --lg-ylw: linear-gradient(180deg, #ffbb00, #e4a30b, #a66f00);
   --lg-ylw-hr: linear-gradient(90deg, #ffbb00, #e4a30b, #a66f00);
   --lg-ylw-2: linear-gradient(180deg, #ffffff, #e4a30b30, #a66f0040);
@@ -28,6 +29,11 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+}
+
+input,
+textarea {
+  border: none;
 }
 
 p,
@@ -163,6 +169,12 @@ li ol li {
 .max {
   width: max-content;
 }
+.w50 {
+  width: 17.8rem;
+}
+.w100 {
+  width: 100%;
+}
 
 .ms-75 {
   max-height: 75%;
@@ -240,6 +252,9 @@ li ol li {
 .pad-02 {
   padding: 0.2rem;
 }
+.pad-05 {
+  padding: 0.5rem;
+}
 .pad-08 {
   padding: 0.8rem;
 }
@@ -279,6 +294,10 @@ li ol li {
 .grd-2-1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
+}
+.grd-1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 .grd-2-2 {
   display: grid;
@@ -363,6 +382,9 @@ li ol li {
 .bg-gry {
   background: #404040;
 }
+.bg-gry-2 {
+  background: #eeeeee;
+}
 .bg-gw {
   background: var(--lg-gw);
 }
@@ -399,6 +421,9 @@ li ol li {
 .bg-wb-hr-2 {
   background: var(--lg-wb-hr-2);
 }
+.bg-wb-hr-3 {
+  background: var(--lg-wb-hr-3);
+}
 
 .clr-wht {
   color: white;
@@ -432,7 +457,7 @@ li ol li {
   text-transform: uppercase;
 }
 .fnt-ll {
-  font-size: 2.6rem;
+  font-size: 2.7rem;
 }
 .fnt-l {
   font-size: 2.4rem;
@@ -441,10 +466,10 @@ li ol li {
   font-size: 2rem;
 }
 .fnt-m {
-  font-size: 1.8rem;
+  font-size: 1.75rem;
 }
 .fnt-sm {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .fnt-s {
   font-size: 1.2rem;
@@ -468,6 +493,9 @@ li ol li {
 }
 .brd-0 {
   border-radius: 0 !important;
+}
+.brd-1 {
+  border: 1px solid #dddddd;
 }
 .brd-lgr {
   border-bottom: #b7b7b7 solid 2px;
@@ -596,6 +624,12 @@ li ol li {
     display: flex;
     flex-direction: column;
   }
+  .grd-1-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .bg-wb-hr-3 {
+    background: var(--lg-wb-hr-2);
+  }
 }
 @media (max-width: 800px) {
   html {
@@ -647,6 +681,10 @@ li ol li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .grd-1-2 {
+    display: flex;
+    flex-wrap: wrap;
   }
   .hide {
     visibility: hidden;
