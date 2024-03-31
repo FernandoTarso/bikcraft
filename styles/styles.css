@@ -577,7 +577,6 @@ li ol li {
 }
 #faq details[open] img {
   transform: rotate(180deg);
-  transition: 0.2s ease-in-out;
 }
 
 #bik-1 {
