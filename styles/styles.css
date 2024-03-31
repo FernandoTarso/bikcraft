@@ -672,6 +672,9 @@ li ol li {
   .sd-60 {
     max-width: 90%;
   }
+  article #faq {
+    margin: 2rem auto;
+  }
 }
 @media (max-width: 400px) {
   html {
