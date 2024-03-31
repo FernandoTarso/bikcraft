@@ -67,6 +67,10 @@ details > summary {
   list-style: none;
 }
 
+li ol li {
+  margin-top: 1rem;
+}
+
 #lista li {
   min-width: 280px;
 }
