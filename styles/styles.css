@@ -276,6 +276,9 @@ li ol li {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+.grd-a11 {
+  grid-area: 1 / 1;
+}
 .clm-ac {
   grid-column: 1 / -1;
 }
@@ -321,6 +324,9 @@ li ol li {
 }
 .pl-ct {
   place-self: center;
+}
+.pl-se {
+  place-self: start end;
 }
 
 .bg-blk {
@@ -453,6 +459,9 @@ li ol li {
 }
 .brd-05 {
   border-radius: 0.5rem;
+}
+.brd-05-2 {
+  border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .hov-slv:hover {
