@@ -622,9 +622,18 @@ li ol li {
 #faq details[open] img {
   transform: rotate(180deg);
 }
-
 #bik-1 {
   box-shadow: 1px 1px 0 1px #eeeeee, -1px -1px 0 1px #eeeeee;
+}
+
+#orc-bik,
+#orc-seg {
+  display: none;
+}
+
+#bik:checked ~ #orc-bik,
+#seg:checked ~ #orc-seg {
+  display: block;
 }
 
 @media (max-width: 1000px) {

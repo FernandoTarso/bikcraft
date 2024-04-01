@@ -33,18 +33,21 @@
     <div class="grd-2 pop-r fit">
       <div class="bg-blk pad-2 brd-05-1 clr-wht rob-m">
         <span class="blc up-cs mk-1 flx al-it">bikcraft ou seguro?</span>
-        <div class="mar-1vt">
-          <details name="bik-seg" class="blc">
-            <summary class="il-blc pad-08 bg-slv brd-05 pointer hov-slv fit" for="bik">Bikcraf
-            </summary>
-            <span class="blc up-cs mk-1 flx al-it">escolha a sua</span>
-          </details>
-          <details name="bik-seg" class="blc">
-            <summary class="il-blc pad-08 bg-wht-2 clr-dgr brd-05 pointer hov-wht fit" for="seg">Seguro
-            </summary>
-            <span class="blc up-cs mk-1 flx al-it">escolha o seu</span>
-          </details>
+
+        <input type="radio" id="bik" name="tipo" value="bike">
+        <label class="il-blc pad-08 bg-slv brd-03" for="bik">Bikcraft</label>
+
+        <input type="radio" id="seg" name="tipo" value="seguro">
+        <label class="il-blc pad-08 bg-wht-2 brd-03 clr-dgr" for="seg">Seguro</label>
+
+        <div id="orc-bik">
+          <p class="clr-wht">teste</p>
         </div>
+
+        <div id="orc-seg">
+          <p class="clr-wht">teste seg</p>
+        </div>
+
       </div>
       <div class="bg-wht pad-2 brd-05-2 clr-dgr bs">
         <form action="">
