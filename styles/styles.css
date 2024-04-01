@@ -122,6 +122,9 @@ li ol li {
 .rt-2 {
   right: -2rem;
 }
+.rt-3 {
+  right: -3rem;
+}
 .bt-2 {
   bottom: -2.45rem;
   right: -0.35rem;
@@ -216,6 +219,9 @@ li ol li {
 .mar-2 {
   margin: 2rem;
 }
+.mar-n2 {
+  margin: -2rem;
+}
 .mar-1tp {
   margin-top: 1rem;
 }
@@ -305,6 +311,10 @@ li ol li {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.grd-2-c {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .grd-2-1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -340,6 +350,9 @@ li ol li {
 }
 .wrap {
   flex-wrap: wrap;
+}
+.gap-03 {
+  gap: 0.3rem;
 }
 .gap-05 {
   gap: 0.5rem;
@@ -648,12 +661,17 @@ li ol li {
 
 #bik:checked ~ #orc-bik,
 #seg:checked ~ #orc-seg,
-#magic:checked ~ #magic-show,
-#nebula:checked ~ #nebula-show,
-#nimbus:checked ~ #nimbus-show,
 #prata:checked ~ #prata-show,
 #ouro:checked ~ #ouro-show {
   display: block;
+}
+#magic:checked ~ #magic-show,
+#nebula:checked ~ #nebula-show,
+#nimbus:checked ~ #nimbus-show {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 @media (max-width: 1000px) {
@@ -716,6 +734,12 @@ li ol li {
   }
   .sd-60 {
     max-width: 80%;
+  }
+}
+@media (max-width: 700px) {
+  .grd-2-c {
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
 @media (max-width: 600px) {

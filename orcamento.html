@@ -30,15 +30,15 @@
   </section>
 
   <main class="bg-gw pad-2 fnt-sm grd jc-ct">
-    <div class="grd-2 pop-r">
+    <div class="grd-2-c pop-r">
       <div class="bg-blk pad-2 brd-05-1 clr-wht rob-m">
         <span class="flx up-cs mk-1 al-it mar-1bt">bikcraft ou seguro?</span>
 
-        <input class="rel rt-2" type="radio" id="bik" name="tipo" value="bike">
-        <label class="il-blc pad-08 pad-2lt bg-slv brd-03" for="bik">Bikcraft</label>
+        <input class="rel" type="radio" id="bik" name="tipo" value="bike">
+        <label class="il-blc pad-08 pad-2lt bg-slv brd-03 mar-n2" for="bik">Bikcraft</label>
 
-        <input class="rel rt-2" type="radio" id="seg" name="tipo" value="seguro">
-        <label class="il-blc pad-08 pad-2lt bg-wht-2 brd-03 clr-dgr" for="seg">Seguro</label>
+        <input class="rel rt-3" type="radio" id="seg" name="tipo" value="seguro">
+        <label class="il-blc pad-08 pad-2lt bg-wht-2 brd-03 clr-dgr mar-1lt" for="seg">Seguro</label>
 
         <div id="orc-bik">
           <span class="flx up-cs mk-1 al-it mar-1tp">escolha a sua:</span>
@@ -46,24 +46,54 @@
           <label class="
           fit blc pad-08 pad-2lt bg-slv brd-03 clr-dgr" for="magic">magic</label>
 
-          <div id="magic-show">
-            <img src="img/bicicletas/magic.jpg" alt="" width="120" height="80">
+          <div id="magic-show" class="bg-wht mar-1tp pad-05 brd-05">
+            <div class="il-blc">
+              <ul class="fnt-ss rob-m clr-dgr">
+                <li class="flx gap-03 al-it"><img src="img/icones/eletrica.svg" alt="" height="16" width="16"> Motor elétrico</li>
+                <li class="flx gap-03 al-it"><img src="img/icones/carbono.svg" alt="" height="16" width="16"> Fibra de Carbono</li>
+                <li class="flx gap-03 al-it"><img src="img/icones/velocidade.svg" alt="" height="16" width="16"> 50 km/h</li>
+                <li class="flx gap-03 al-it"><img src="img/icones/rastreador.svg" alt="" height="16" width="16"> Rastreador</li>
+              </ul>
+            </div>
+            <div class="il-blc">
+              <img class="blc" src="img/bicicletas/magic.jpg" alt="" width="108" height="72">
+            </div>
           </div>
 
           <input class="rel bt-2" type="radio" id="nebula" name="bikcraft" value="nebula">
           <label class="
           fit blc pad-08 pad-2lt bg-slv brd-03 clr-dgr" for="nebula">nebula</label>
 
-          <div id="nebula-show">
-            <img src="img/bicicletas/nebula.jpg" alt="" width="120" height="80">
+          <div id="nebula-show" class="bg-wht mar-1tp pad-05 brd-05">
+            <div class="il-blc">
+              <ul class="fnt-ss rob-m clr-dgr" class="bg-wht mar-1tp pad-05 brd-05">
+                <li class="flx gap-03 al-it"><img src="img/icones/eletrica.svg" alt="" height="16" width="16"> Motor elétrico</li>
+                <li class="flx gap-03 al-it"><img src="img/icones/carbono.svg" alt="" height="16" width="16"> Fibra de Carbono</li>
+                <li class="flx gap-03 al-it"><img src="img/icones/velocidade.svg" alt="" height="16" width="16"> 50 km/h</li>
+                <li class="flx gap-03 al-it"><img src="img/icones/rastreador.svg" alt="" height="16" width="16"> Rastreador</li>
+              </ul>
+            </div>
+            <div class="il-blc">
+              <img class="blc" src="img/bicicletas/nebula.jpg" alt="" width="108" height="72">
+            </div>
           </div>
 
           <input class="rel bt-2" type="radio" id="nimbus" name="bikcraft" value="nimbus">
           <label class="
           fit blc pad-08 pad-2lt bg-slv brd-03 clr-dgr" for="nimbus">nimbus</label>
 
-          <div id="nimbus-show">
-            <img src="img/bicicletas/nimbus.jpg" alt="" width="120" height="80">
+          <div id="nimbus-show" class="bg-wht mar-1tp pad-05 brd-05">
+            <div class="il-blc">
+              <ul class="fnt-ss rob-m clr-dgr">
+                <li class="flx gap-03 al-it"><img src="img/icones/eletrica.svg" alt="" height="16" width="16"> Motor elétrico</li>
+                <li class="flx gap-03 al-it"><img src="img/icones/carbono.svg" alt="" height="16" width="16"> Fibra de Carbono</li>
+                <li class="flx gap-03 al-it"><img src="img/icones/velocidade.svg" alt="" height="16" width="16"> 50 km/h</li>
+                <li class="flx gap-03 al-it"><img src="img/icones/rastreador.svg" alt="" height="16" width="16"> Rastreador</li>
+              </ul>
+            </div>
+            <div class="il-blc">
+              <img class="blc" src="img/bicicletas/nimbus.jpg" alt="" width="108" height="72">
+            </div>
           </div>
 
         </div>
@@ -74,8 +104,13 @@
           <label class="
           fit blc pad-08 pad-2lt bg-slv brd-03 clr-dgr" for="prata">prata</label>
 
-          <div id="prata-show">
-            <img src="img/bicicletas/nimbus.jpg" alt="" width="120" height="80">
+          <div id="prata-show" class="mar-1tp brd-05">
+            <ul class="bg-gry pad-3 il-blc clr-wht mark pop-r fnt-ss brd-05">
+              <li><span>Duas trocas por ano</span></li>
+              <li><span>Assistência técnica</span></li>
+              <li><span>Suporte das 08h às 18h</span></li>
+              <li><span>Cobertura estadual</span></li>
+            </ul>
           </div>
 
           <input class="rel bt-2" type="radio" id="ouro" name="bikcraft" value="ouro">
@@ -83,7 +118,14 @@
           fit blc pad-08 pad-2lt bg-ylw-2 brd-03 clr-dgr" for="ouro">ouro</label>
 
           <div id="ouro-show">
-            <img src="img/bicicletas/nimbus.jpg" alt="" width="120" height="80">
+            <ul class="bg-gry pad-3 il-blc clr-wht mark pop-r fnt-ss brd-05">
+              <li><span>Cinco trocas por ano</span></li>
+              <li><span>Assistência especial</span></li>
+              <li><span>Suporte 24h</span></li>
+              <li><span>Cobertura nacional</span></li>
+              <li><span>Desconto em parceiros</span></li>
+              <li><span>Acesso ao Clube Bikcraft</span></li>
+            </ul>
           </div>
 
         </div>
