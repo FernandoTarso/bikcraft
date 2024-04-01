@@ -119,6 +119,13 @@ li ol li {
 .rel {
   position: relative;
 }
+.rt-2 {
+  right: -2rem;
+}
+.bt-2 {
+  bottom: -2.45rem;
+  right: -0.35rem;
+}
 .tr-0 {
   position: absolute;
   top: 0;
@@ -269,6 +276,9 @@ li ol li {
 }
 .pad-1lt {
   padding-left: 1rem;
+}
+.pad-2lt {
+  padding-left: 2rem;
 }
 .pad-rad {
   padding: 1rem 1rem 1rem 0.5rem;
@@ -627,12 +637,22 @@ li ol li {
 }
 
 #orc-bik,
-#orc-seg {
+#orc-seg,
+#magic-show,
+#nebula-show,
+#nimbus-show,
+#prata-show,
+#ouro-show {
   display: none;
 }
 
 #bik:checked ~ #orc-bik,
-#seg:checked ~ #orc-seg {
+#seg:checked ~ #orc-seg,
+#magic:checked ~ #magic-show,
+#nebula:checked ~ #nebula-show,
+#nimbus:checked ~ #nimbus-show,
+#prata:checked ~ #prata-show,
+#ouro:checked ~ #ouro-show {
   display: block;
 }
 
@@ -706,8 +726,7 @@ li ol li {
     grid-template-columns: repeat(auto-fit, minmax(240px, max-content));
   }
   .grd-2 {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
     justify-content: center;
   }
   .grd-1-2 {
@@ -751,6 +770,9 @@ li ol li {
 @media (max-width: 400px) {
   html {
     font-size: 12px;
+  }
+  .pad-2 {
+    padding: 1rem;
   }
   .grd-2-1 {
     display: flex;
