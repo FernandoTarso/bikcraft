@@ -285,7 +285,7 @@ li ol li {
 }
 .grd-1 {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: repeat(auto-fit, minmax(320px, max-content));
 }
 .grd-2 {
   display: grid;
@@ -701,6 +701,9 @@ li ol li {
 @media (max-width: 600px) {
   html {
     font-size: 13px;
+  }
+  .grd-1 {
+    grid-template-columns: repeat(auto-fit, minmax(240px, max-content));
   }
   .grd-2 {
     display: flex;
