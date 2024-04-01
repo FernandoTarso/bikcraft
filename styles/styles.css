@@ -15,7 +15,7 @@
   --lg-ylw-2: linear-gradient(180deg, #ffffff, #e4a30b30, #a66f0040);
   --lg-slv: linear-gradient(180deg, #9c9c9c, #717171, #595959);
   --lg-slv-2: linear-gradient(180deg, #ffffff, #71717130, #59595940);
-  --lg-gw: linear-gradient(180deg, #404040 0% 50%, white 50% 100%);
+  --lg-gw: linear-gradient(180deg, #404040 0% 50%, #eeeeee 50% 100%);
   --lg-gw-2: linear-gradient(180deg, #404040 0% 85%, white 85% 100%);
   --lg-blk: linear-gradient(0deg, #111111, #2e2e2e, #404040);
   --lg-wht: linear-gradient(180deg, #eeeeee, #cdcdcd, #b7b7b7);
@@ -261,14 +261,14 @@ li ol li {
 .pad-1 {
   padding: 1rem;
 }
-.pad-1lt {
-  padding-left: 1rem;
-}
 .pad-2 {
   padding: 2rem;
 }
 .pad-3 {
   padding: 3rem;
+}
+.pad-1lt {
+  padding-left: 1rem;
 }
 .pad-rad {
   padding: 1rem 1rem 1rem 0.5rem;
@@ -507,8 +507,11 @@ li ol li {
 .brd-05 {
   border-radius: 0.5rem;
 }
-.brd-05-2 {
+.brd-05-1 {
   border-radius: 0.5rem 0 0 0.5rem;
+}
+.brd-05-2 {
+  border-radius: 0 0.5rem 0.5rem 0;
 }
 
 .hov-slv:hover {
@@ -686,6 +689,12 @@ li ol li {
     display: flex;
     flex-wrap: wrap;
   }
+  .brd-05-1 {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .brd-05-2 {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
   .hide {
     visibility: hidden;
     height: 0;
@@ -702,7 +711,7 @@ li ol li {
     --lg-bw-2: #000000;
     --lg-wbw: #000000;
     --lg-wb-hr: #000000;
-    --lg-wb-hr-2: #000000;
+    --lg-wb-hr-2: linear-gradient(180deg, black 0% 50%, white 50% 100%);
   }
   #parc li {
     padding: 0.7rem;
