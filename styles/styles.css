@@ -283,6 +283,10 @@ li ol li {
 .grd {
   display: grid;
 }
+.grd-1 {
+  display: grid;
+  grid-template-columns: auto;
+}
 .grd-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -29,93 +29,69 @@
     <h1 class="fnt-ll clr-wht pop-sb">solicite um orçamento<span class="clr-ylw">.</span></h1>
   </section>
 
-  <main class="grd jc-ct bg-gw pad-2 rob-m">
-    <div class="grd-2 fnt-sm fit">
-      <div class="bg-blk brd-05-1 pad-1 clr-wht w100">
-        <legend class="flx al-it up-cs mar-1bt fnt-sm mk-1 mar-1lt pop-r">bikcraft ou seguro?</legend>
-        <div class="grd gap-1">
-          <details class="il-blc" name="bikseg">
-            <summary class="bg-slv pad-rad il-blc brd-05 fnt-sm hov-slv pointer"> Bikcraft
+  <main class="bg-gw pad-2 fnt-sm grd jc-ct">
+    <div class="grd-2 pop-r fit">
+      <div class="bg-blk pad-2 brd-05-1 clr-wht rob-m">
+        <span class="blc up-cs mk-1 flx al-it">bikcraft ou seguro?</span>
+        <div class="mar-1vt">
+          <details name="bik-seg" class="blc">
+            <summary class="il-blc pad-08 bg-slv brd-05 pointer hov-slv fit" for="bik">Bikcraf
             </summary>
-            <legend class="flx al-it up-cs mar-1bt fnt-sm mk-1 mar-1lt pop-r">escolha a sua:</legend>
-            <form action="">
-              <label class="bg-slv pad-rad blc brd-05 fit fnt-sm mar-1vt hov-slv" for="nimbus">
-                <input id="nimbus" class="bg-slv pad-1 il-blc" name="bike" type="radio" value="1"> Nimbus Stark
-              </label>
-              <label class="bg-slv pad-rad blc brd-05 fit fnt-sm mar-1vt hov-slv" for="magic">
-                <input id="magic" class="bg-slv pad-1 il-blc" name="bike" type="radio" value="2"> Magic Might
-              </label>
-              <label class="bg-slv pad-rad blc brd-05 fit fnt-sm mar-1vt hov-slv" for="nebula">
-                <input id="nebula" class="bg-slv pad-1 il-blc" name="bike" type="radio" value="1"> Nebula Cosmic
-              </label>
-            </form>
+            <span class="blc up-cs mk-1 flx al-it">escolha a sua</span>
           </details>
-          <details class="il-blc" name="bikseg">
-            <summary class="bg-wht-2 clr-blk pad-rad blc brd-05 fit fnt-sm hov-wht pointer"> Seguro
+          <details name="bik-seg" class="blc">
+            <summary class="il-blc pad-08 bg-wht-2 clr-dgr brd-05 pointer hov-wht fit" for="seg">Seguro
             </summary>
-            <legend class="flx al-it up-cs mar-1bt fnt-sm mk-1 mar-1lt pop-r">escolha o plano:</legend>
-            <form action="">
-              <label class="bg-slv pad-rad blc brd-05 fit fnt-sm mar-1vt hov-slv" for="prata">
-                <input id="prata" class="bg-gry pad-1 il-blc" name="seg" type="radio" value="1"> Prata
-              </label>
-              <label class="bg-ylw-2 pad-rad blc brd-05 fit fnt-sm mar-1vt hov" for="ouro">
-                <input id="ouro" class="bg-gry pad-1 il-blc" name="seg" type="radio" value="1"> Ouro
-              </label>
-            </form>
+            <span class="blc up-cs mk-1 flx al-it">escolha o seu</span>
           </details>
         </div>
       </div>
-      <div class="bg-wht brd-05-2 pad-1 clr-dgr pop-r fit">
-        <form class="" action="">
-          <legend class="up-cs rob-m fit">dados pessoais</legend>
-          <div class="il-blc mar-1tp">
-            <label class="blc" for="nome">Nome <input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="nome" name="nome" type="text" placeholder="Nome"></label>
+      <div class="bg-wht pad-2 brd-05-2 clr-dgr bs">
+        <form action="">
+          <span class="blc up-cs rob-m clm-ac">dados pessoais</span>
+          <div class="grd-1">
+            <div class="blc mar-1tp">
+              <label class="blc" for="nome">Nome<input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="nome" name="nome" type="text" placeholder="Seu nome"></label>
+            </div>
+            <div class="blc mar-1tp">
+              <label class="blc" for="sobrenome">Sobrenome<input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="sobrenome" name="sobrenome" type="text" placeholder="Seu sobrenome"></label>
+            </div>
+            <div class="blc mar-1tp">
+              <label class="blc" for="cpf">CPF<input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="cpf" name="cpf" type="number" placeholder="000.000.000-00"></label>
+            </div>
+            <div class="blc mar-1tp">
+              <label class="blc" for="email">Email<input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="email" name="email" type="email" placeholder="contato@email.com"></label>
+            </div>
           </div>
-          <div class="il-blc mar-1tp">
-            <label class="blc" for="sobrenome">Sobrenome <input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="sobrenome" name="sobrenome" type="text" placeholder="Sobrenome"></label>
+          <div>
+            <span class="blc up-cs rob-m mar-1tp">entrega</span>
+            <div class="blc mar-1vt">
+              <label class="blc mar-1tp" for="cep">CEP<input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="cep" name="cep" type="number" placeholder="00000-000"></label>
+            </div>
+            <div class="blc mar-1vt">
+              <label class="blc mar-1tp" for="logradouro">Logradouro<input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="logradouro" name="logradouro" type="text" placeholder="Rua, Avenida..."></label>
+            </div>
+            <div class="blc mar-1vt">
+              <label class="blc mar-1tp" for="numero">Numero<input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="numero" name="numero" type="text" placeholder=""></label>
+            </div>
+            <div class="blc mar-1vt">
+              <label class="blc mar-1tp" for="bairro">Bairro<input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="bairro" name="bairro" type="text" placeholder=""></label>
+            </div>
+            <div class="blc mar-1vt">
+              <label class="blc mar-1tp" for="cidade">Cidade<input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="cidade" name="cidade" type="text" placeholder=""></label>
+            </div>
+            <div class="blc mar-1vt">
+              <label class="blc mar-1tp" for="estado">Estado
+                <select name="estado" id="estado" class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02">
+                  <option value="0">Selecione</option>
+                  <option value="1">Paraná</option>
+                  <option value="2">São Paulo</option>
+                  <option value="3">Rio de Janeiro</option>
+                </select>
+              </label>
+            </div>
           </div>
-          <div class="il-blc mar-1tp">
-            <label class="blc" for="cpf"> CPF <input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="cpf" name="cpf" type="number" placeholder="000.000.000-00"></label>
-          </div>
-          <div class="il-blc mar-1tp">
-            <label class="blc" for="email">Email <input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="email" name="email" type="email" placeholder="contato@email.com"></label>
-          </div>
-          <legend class="up-cs rob-m mar-1tp fit">entrega</legend>
-          <div class="il-blc mar-1tp">
-            <label class="blc" for="cep">CEP
-              <input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="cep" name="cep" type="number" placeholder="00000-000">
-            </label>
-          </div>
-          <div class="il-blc mar-1tp">
-            <label class="blc" for="logradouro">Logradouro
-              <input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="logradouro" name="logradouro" type="text" placeholder="Rua, Avenida...">
-            </label>
-          </div>
-          <div class="il-blc mar-1tp">
-            <label class="blc" for="cidade">Cidade
-              <input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="cidade" name="cidade" type="text" placeholder="">
-            </label>
-          </div>
-          <div class="il-blc mar-1tp">
-            <label class="blc" for="numero">Número
-              <input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="numero" name="numero" type="number" placeholder="">
-            </label>
-          </div>
-          <div class="il-blc mar-1tp">
-            <label class="blc" for="bairro">Bairro
-              <input class="blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02" id="bairro" name="bairro" type="text" placeholder="">
-            </label>
-          </div>
-          <div class="il-blc w50 mar-1tp">
-            <label id="estado" class="blc" for="estado">Estado <select class="brd-res blc bg-gry-2 fnt-sm brd-03 brd-lgr pad-02 w100 pop-r" name="estado">
-                <option value="0">Estado</option>
-                <option value="1">Paraná</option>
-                <option value="2">São Paulo</option>
-                <option value="3">Rio de Janeiro</option>
-              </select>
-            </label>
-          </div>
-          <input class="bg-ylw-2 il-blc brd-res brd-05 pad-1 clr-dyl fnt-s up-cs mar-1vt hov rob-m" type="submit" value="solicitar orçamento">
+          <input class="bg-ylw-2 blc brd-res brd-05 pad-1 clr-dyl fnt-s up-cs mar-1vt hov rob-m" type="submit" value="enviar orçamento">
         </form>
       </div>
     </div>
