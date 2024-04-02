@@ -77,6 +77,12 @@ li ol li {
   margin-top: 1rem;
 }
 
+input[type="radio"] {
+  border: 0px;
+  /* width: 100%; */
+  width: 1rem;
+}
+
 #lista li {
   min-width: 280px;
 }
@@ -119,15 +125,18 @@ li ol li {
 .rel {
   position: relative;
 }
+.rt-1 {
+  right: -0.2rem;
+}
 .rt-2 {
   right: -2rem;
 }
 .rt-3 {
-  right: -3rem;
+  right: -3.2rem;
 }
 .bt-2 {
-  bottom: -2.45rem;
-  right: -0.35rem;
+  bottom: -2.5rem;
+  right: -0.3rem;
 }
 .tr-0 {
   position: absolute;
