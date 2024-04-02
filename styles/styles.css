@@ -173,6 +173,10 @@ li ol li {
   margin-right: 2rem;
   max-width: 60%;
 }
+.max-5h-3h {
+  max-height: 300px;
+  max-width: 500px;
+}
 .fit {
   width: fit-content;
 }
@@ -705,7 +709,7 @@ li ol li {
       black 8% 92%,
       white 92% 100%
     );
-    --lg-wb-hr: #000000;
+    --lg-wb-hr: linear-gradient(0deg, black 0% 90%, white 90% 100%);
   }
   .grd-2-b {
     display: flex;
@@ -778,7 +782,6 @@ li ol li {
     --lg-bw: #000000;
     --lg-bw-2: #000000;
     --lg-wbw: #000000;
-    --lg-wb-hr: #000000;
     --lg-wb-hr-2: linear-gradient(180deg, black 0% 50%, white 50% 100%);
   }
   #parc li {
