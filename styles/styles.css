@@ -125,19 +125,6 @@ input[type="radio"] {
 .rel {
   position: relative;
 }
-.rt-1 {
-  right: -0.2rem;
-}
-.rt-2 {
-  right: -2rem;
-}
-.rt-3 {
-  right: -3.2rem;
-}
-.bt-2 {
-  bottom: -2.5rem;
-  right: -0.3rem;
-}
 .tr-0 {
   position: absolute;
   top: 0;
@@ -566,6 +553,19 @@ input[type="radio"] {
 .i-hide {
   position: absolute;
   visibility: hidden;
+}
+#orcamento-1 label::before {
+  content: "";
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 1px solid #111111;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+#orcamento-1 input:checked + label::before {
+  box-shadow: inset 0 0 0 0.1rem #cccccc, inset 0 0 0 0.8rem #111111;
 }
 
 .hov-slv:hover {
