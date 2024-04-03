@@ -525,7 +525,7 @@ input[type="radio"] {
 }
 
 .mark {
-  list-style: url(/img/icones/lista.svg);
+  list-style: url(../img/icones/lista.svg);
 }
 
 .brd-res {
