@@ -299,6 +299,9 @@ input[type="radio"] {
 .grd {
   display: grid;
 }
+.clm-1 {
+  grid-template-columns: auto 1fr auto;
+}
 .grd-1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, max-content));
@@ -563,9 +566,14 @@ input[type="radio"] {
   margin-right: 0.5rem;
   border-radius: 50%;
 }
-
+#orcamento-1 label span {
+  display: none;
+}
 #orcamento-1 input:checked + label::before {
   box-shadow: inset 0 0 0 0.1rem #cccccc, inset 0 0 0 0.8rem #111111;
+}
+#orcamento-1 input:checked + label span {
+  display: inline-block;
 }
 
 .hov-slv:hover {
