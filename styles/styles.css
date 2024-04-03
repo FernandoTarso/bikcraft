@@ -650,8 +650,14 @@ input[type="radio"] {
   background: #dedede;
 }
 
+#faq li:not(:first-child) {
+  margin-top: 0.5rem;
+}
 #faq li:nth-child(odd) {
   background: #dedede;
+}
+#faq li:nth-child(even) {
+  background: #ffffff;
 }
 #faq details:hover {
   background: var(--lg-ylw-2);
@@ -663,6 +669,16 @@ input[type="radio"] {
 #faq details[open] img {
   transform: rotate(180deg);
 }
+#faq p::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #9c9c9c;
+  position: relative;
+  bottom: 1rem;
+}
+
 #bik-1 {
   box-shadow: 1px 1px 0 1px #eeeeee, -1px -1px 0 1px #eeeeee;
 }
