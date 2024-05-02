@@ -50,6 +50,24 @@ a {
   color: inherit;
 }
 
+header nav a {
+  position: relative;
+}
+header nav a::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background: white;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+header nav a:hover::after,
+header nav a.ativo::after {
+  width: 100%;
+}
+
 img,
 iframe {
   max-width: 100%;
