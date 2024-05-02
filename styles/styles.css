@@ -720,7 +720,7 @@ input[type="radio"] {
 }
 
 #bik:checked ~ #orc-bik,
-#seg:checked ~ #orc-seg,
+#seguro:checked ~ #orc-seg,
 #prata:checked ~ #prata-show,
 #ouro:checked ~ #ouro-show {
   display: block;
