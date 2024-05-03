@@ -16,21 +16,21 @@
 <body>
   <header class="flx jc-sb al-it wrap bg-blk clr-wht pad-1">
     <div>
-      <a class="hov-2 pad-08 brd-05 blc" href="index.html"><img src="img/bikcraft.svg" alt=""></a>
+      <a class="hov-2 pad-08 brd-05 blc" href="index.html"><img class="fadeInDown" src="img/bikcraft.svg" alt="" data-anime="0"></a>
     </div>
     <nav>
-      <ul class="flx jc-sb wrap gap-1 fnt-sm pop-r">
-        <li><a class="hov-2 pad-02 brd-05" href="bicicletas.html">Bicicletas</a></li>
-        <li><a class="hov-2 pad-02 brd-05" href="seguros.html">Seguros</a></li>
-        <li><a class="hov-2 pad-02 brd-05" href="contato.html">Contatos</a></li>
+      <ul class="flx jc-sb wrap gap-1 pop-r fnt-sm">
+        <li class="fadeInLeft" data-anime="0"><a class="pad-02 brd-05" href="bicicletas.html">Bicicletas</a></li>
+        <li class="fadeInLeft" data-anime="100"><a class="pad-02 brd-05" href="seguros.html">Seguros</a></li>
+        <li class="fadeInLeft" data-anime="200"><a class="pad-02 brd-05" href="contato.html">Contatos</a></li>
       </ul>
     </nav>
   </header>
 
   <article class="bg-wht pad-1">
-    <h1 class="fnt-ll pop-sb">seguros<span class="clr-ylw">.</span></h1>
+    <h1 class="fnt-ll pop-sb fadeInDown" data-anime="50">seguros<span class="clr-ylw">.</span></h1>
     <div class="flx wrap jc-sa bg-wht mar-1vt">
-      <div class="bg-blk pad-3 brd-05 mar-1vt">
+      <div class="bg-blk pad-3 brd-05 mar-1vt fadeInLeft" data-anime="100">
         <div class="flx jc-sb rob-m">
           <p class="up-cs fnt-ll il-blc clr-slv">prata</p>
           <div class="il-blc clr-wht">
@@ -45,7 +45,7 @@
         </ul>
         <a class="bg-slv il-blc brd-05 pad-1 clr-dgr fnt-s up-cs hov-slv rob-m" href="./orcamento.html?tipo=seguro&produto=prata">inscreva-se</a>
       </div>
-      <div class="bg-blk pad-3 brd-05 mar-1vt">
+      <div class="bg-blk pad-3 brd-05 mar-1vt fadeInLeft" data-anime="200">
         <div class="flx jc-sb rob-m">
           <p class="il-blc up-cs fnt-ll clr-gld">ouro</p>
           <div class="txt-ib clr-wht">
@@ -198,6 +198,7 @@
     <p class="mar-1tp fnt-m rob-r"><a class="hov-2 pad-08 brd-05 blc fit" href="termos.html">Direitos reservados.</a></p>
   </footer>
 
+  <script src="./js/plugins/simple-anime.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

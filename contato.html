@@ -16,24 +16,24 @@
 <body>
   <header class="flx jc-sb al-it wrap bg-blk clr-wht pad-1">
     <div>
-      <a class="hov-2 pad-08 brd-05 blc" href="index.html"><img src="img/bikcraft.svg" alt=""></a>
+      <a class="hov-2 pad-08 brd-05 blc" href="index.html"><img class="fadeInDown" src="img/bikcraft.svg" alt="" data-anime="0"></a>
     </div>
     <nav>
-      <ul class="flx jc-sb wrap gap-1 fnt-sm pop-r">
-        <li><a class="hov-2 pad-02 brd-05" href="bicicletas.html">Bicicletas</a></li>
-        <li><a class="hov-2 pad-02 brd-05" href="seguros.html">Seguros</a></li>
-        <li><a class="hov-2 pad-02 brd-05" href="contato.html">Contatos</a></li>
+      <ul class="flx jc-sb wrap gap-1 pop-r fnt-sm">
+        <li class="fadeInLeft" data-anime="0"><a class="pad-02 brd-05" href="bicicletas.html">Bicicletas</a></li>
+        <li class="fadeInLeft" data-anime="100"><a class="pad-02 brd-05" href="seguros.html">Seguros</a></li>
+        <li class="fadeInLeft" data-anime="200"><a class="pad-02 brd-05" href="contato.html">Contatos</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="bg-gry pad-1">
-    <span class="up-cs fnt-m clr-lgr pop-r">respostas em até 24h</span>
-    <h1 class="fnt-ll clr-wht pop-sb">nosso contato<span class="clr-ylw">.</span></h1>
+    <span class="up-cs fnt-m clr-lgr pop-r fadeInDown" data-anime="50">respostas em até 24h</span>
+    <h1 class="fnt-ll clr-wht pop-sb fadeInDown" data-anime="100">nosso contato<span class="clr-ylw">.</span></h1>
   </section>
 
   <main class="bg-gw pad-2 fnt-sm grd jc-ct">
-    <div class="grd-2 pop-r fit">
+    <div class="grd-2 pop-r fit fadeInLeft" data-anime="150">
       <div class="bg-blk pad-2 brd-05-1 clr-wht">
         <span class="blc mar-1bt rob-m">Lojas Online</span>
         <div class="">
@@ -151,7 +151,7 @@
     </section>
     <p class="mar-1tp fnt-m"><a class="hov-2 pad-08 brd-05 blc fit rob-r" href="termos.html">Direitos reservados.</a></p>
   </footer>
-
+  <script src="./js/plugins/simple-anime.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

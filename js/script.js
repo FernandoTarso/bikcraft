@@ -34,3 +34,8 @@ function eventoResposta(resposta) {
   resposta.addEventListener("click", expandirResposta);
 }
 botoes.forEach(eventoResposta);
+
+// Animação
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}

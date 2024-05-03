@@ -16,26 +16,26 @@
 <body>
   <header class="flx jc-sb al-it wrap bg-blk clr-wht pad-1">
     <div>
-      <a class="hov-2 pad-08 brd-05 blc" href="index.html"><img src="img/bikcraft.svg" alt=""></a>
+      <a class="hov-2 pad-08 brd-05 blc" href="index.html"><img class="fadeInDown" src="img/bikcraft.svg" alt="" data-anime="0"></a>
     </div>
     <nav>
       <ul class="flx jc-sb wrap gap-1 pop-r fnt-sm">
-        <li><a class="pad-02 brd-05" href="bicicletas.html">Bicicletas</a></li>
-        <li><a class="pad-02 brd-05" href="seguros.html">Seguros</a></li>
-        <li><a class="pad-02 brd-05" href="contato.html">Contatos</a></li>
+        <li class="fadeInLeft" data-anime="0"><a class="pad-02 brd-05" href="bicicletas.html">Bicicletas</a></li>
+        <li class="fadeInLeft" data-anime="100"><a class="pad-02 brd-05" href="seguros.html">Seguros</a></li>
+        <li class="fadeInLeft" data-anime="200"><a class="pad-02 brd-05" href="contato.html">Contatos</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="grd-2 al-it jc-ct bg-bw clr-wht mar-1bt">
     <div class="pad-1 mar-0a">
-      <h1 class="fnt-ll pop-sb">Bicicletas feitas sob medida<span class="clr-ylw">.</span></h1>
-      <p class="fnt-sm ln-hgt pop-r clr-lgr mar-1vt">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida pra você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-      <a class="bg-ylw-2 il-blc brd-05 pad-1 rob-m clr-dyl fnt-s up-cs hov" href="bicicletas.html">escolha a sua</a>
+      <h1 class="fnt-ll pop-sb fadeInDown" data-anime="0">Bicicletas feitas sob medida<span class="clr-ylw">.</span></h1>
+      <p class="fnt-sm ln-hgt pop-r clr-lgr mar-1vt fadeInDown" data-anime="50">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida pra você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+      <a class="bg-ylw-2 il-blc brd-05 pad-1 rob-m clr-dyl fnt-s up-cs hov fadeInDown" href="bicicletas.html" data-anime="100">escolha a sua</a>
       <div class="blc h-4"></div>
     </div>
     <div class="flx jc-ct"">
-      <img class=" hide cov brd-0" src=" img/bicicletas/nimbus-home.jpg" alt="" height="600">
+      <img class=" hide cov brd-0 fadeInLeft" src=" img/bicicletas/nimbus-home.jpg" alt="" height="600" data-anime="150">
     </div>
   </main>
 
@@ -185,6 +185,7 @@
     <p class="mar-1tp fnt-m"><a class="hov-2 pad-08 brd-05 blc fit rob-r" href="termos.html">Direitos reservados.</a></p>
   </footer>
 
+  <script src="./js/plugins/simple-anime.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
