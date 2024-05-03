@@ -87,6 +87,13 @@ ol li:before {
   counter-increment: item;
 }
 
+dt button {
+  border: none;
+  background: #dddddd;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
 details > summary {
   list-style: none;
 }
@@ -99,6 +106,15 @@ input[type="radio"] {
   border: 0px;
   /* width: 100%; */
   width: 1rem;
+}
+
+.colapsed {
+  display: none !important;
+}
+
+.inh {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 #lista li {
