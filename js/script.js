@@ -15,3 +15,22 @@ new URLSearchParams(location.search).forEach((parametro) => {
   }
   console.log(parametro);
 });
+
+// Lista faq expansíva com botão
+const botoes = document.querySelectorAll("#faq button");
+
+function expandirResposta(evento) {
+  const pergunta = evento.currentTarget;
+  const resposta = document.getElementById(
+    pergunta.getAttribute("aria-controls")
+  );
+
+  resposta.classList.toggle("il-blc");
+  const expanded = resposta.classList.contains("il-blc");
+  pergunta.setAttribute("aria-expanded", expanded);
+}
+
+function eventoResposta(resposta) {
+  resposta.addEventListener("click", expandirResposta);
+}
+botoes.forEach(eventoResposta);

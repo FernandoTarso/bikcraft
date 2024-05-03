@@ -108,8 +108,12 @@ input[type="radio"] {
   width: 1rem;
 }
 
-.colapsed {
-  display: none !important;
+dd {
+  display: none;
+}
+
+#faq button[aria-expanded="true"] img {
+  transform: rotate(180deg);
 }
 
 .inh {
