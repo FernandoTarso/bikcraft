@@ -22,22 +22,22 @@
   --lg-bgb: linear-gradient(0deg, #111111 0%, #9c9c9c 15%, #111111 85%);
 }
 
-.fadeInDown {
+.js .fadeInDown {
   transform: translate3d(0, -20px, 0);
 }
-.fadeInUp {
+.js .fadeInUp {
   transform: translate3d(0, 20px, 0);
 }
-.fadeInRight {
+.js .fadeInRight {
   transform: translate3d(20px, 0, 0);
 }
-.fadeInLeft {
+.js .fadeInLeft {
   transform: translate3d(-20px, 0, 0);
 }
-[data-anime] {
+.js [data-anime] {
   opacity: 0;
 }
-.anime {
+.js .anime {
   opacity: 1;
   transform: none;
   transition: transform 0.8s, opacity 0.8s;
@@ -129,7 +129,7 @@ input[type="radio"] {
   width: 1rem;
 }
 
-dd {
+.js dd {
   display: none;
 }
 
